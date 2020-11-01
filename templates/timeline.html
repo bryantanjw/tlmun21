@@ -1,0 +1,115 @@
+{% extends 'layout.html' %}
+
+{% block title %}Timeline - TLMUN{% endblock %}
+
+{% block content %}
+<header class="default-header">
+    <div class="container">
+        <div class="header-wrap">
+            <div class="header-top d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+                </div>
+                <div class="main-menubar d-flex align-items-center" style="filter: brightness(0);">
+                    <nav>
+                        <a href="{{ url_for('about') }}">About</a>
+                        <a href="{{ url_for('councils') }}">Councils</a>
+                        <a href="{{ url_for('timeline') }}">Timeline</a>
+                        <a href="{{ url_for('resources') }}">Resources</a>
+                        <a href="{{ url_for('secretariat') }}">Secretariat</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section id="schedule-section" class="schedule-section section">
+    <div class="container">
+        <h3 class="section-heading text-center mb-5" style="font-size: 2.5rem;">Schedule</h3>
+        
+        <!-- Nav tabs -->
+        <ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
+            <li class="nav-item mr-2">
+                <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
+                    <span class="heading">Day 1</span>
+                    <span class="meta">(Wed 12, Oct)</span>
+                </a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab-2-content" role="tab" aria-controls="tab-2-content" aria-selected="false">
+                    <span class="heading">Day 2</span>
+                    <span class="meta">(Thu 13, Oct)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab-3-content" role="tab" aria-controls="tab-3-content" aria-selected="false">
+                    <span class="heading">Day 3</span>
+                    <span class="meta">(Fri 14, Oct)</span>
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="schedule-tab-content tab-content mt-4">
+            <div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
+                <div class="item item-talk">
+                    <div class="meta">
+                        <h4 class="time mb-3">9:00 - 9:30</h4>
+                    </div><!--//meta-->
+                    <div class="content">
+                        <h3 class="title mb-3">Opening Ceremony</h3>
+                        <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Zoom</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+                    </div><!--//content-->
+                </div><!--//item-->
+        
+                <div class="item item-other">
+                    <div class="meta">
+                        <h4 class="time mb-3">12:00 - 13:30</h4>
+                    </div><!--//meta-->
+                    <div class="content">
+                        <h3 class="title mb-3">Lunch Break</h3>
+                        <!-- <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Room B6</div> -->
+                        <div class="desc">Buffet lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item item-talk">
+                    <div class="meta">
+                        <h4 class="time mb-3">16:30 - 17:30</h4>
+                    </div><!--//meta-->
+                    <div class="content">
+                        <h3 class="title mb-3">Debate Session</h3>
+                        <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Discord</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item item-other">
+                    <div class="meta">
+                        <h4 class="time mb-3">18:00 - 20:00</h4>
+                    </div><!--//meta-->
+                    <div class="content">
+                        <h3 class="title mb-3">Dinner &amp; After-party</h3>
+                        <!-- <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Bar Lorem Ipsum</div> -->
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
+                    </div><!--//content-->
+                </div><!--//item-->
+                
+            </div><!--//tab-1-content-->
+            <div class="tab-pane no-timeline" id="tab-2-content" role="tabpanel" aria-labelledby="tab-2">
+                <h4 class="text-center py-5 text-muted">Day 2 Agenda Coming Soon...</h4>
+            </div><!--//tab-2-content-->
+            <div class="tab-pane no-timeline" id="tab-3-content" role="tabpanel" aria-labelledby="tab-3">
+                <h4 class="text-center py-5 text-muted">Day 3 Agenda Coming Soon...</h4>
+            </div><!--//tab-3-content-->
+        </div><!--//schedule-tab-content-->
+        <div class="about-btn">
+            <button class="mb-5">Download Schedule
+                <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+            </button>
+        </div>
+    </div><!--//container-->
+</section><!--//schedule-section-->
+{% endblock %}

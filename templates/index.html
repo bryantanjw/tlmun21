@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block title %}TLMUN{% endblock %}
+
+{% block content %}
+<!-- Start Header Area -->
+<header class="default-header">
+	<div class="container">
+		<div class="header-wrap">
+			<div class="header-top d-flex justify-content-between align-items-center">
+				<div class="logo" style="filter: brightness(0) invert(1);">
+					<a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+				</div>
+				<div class="main-menubar d-flex align-items-center">
+					<nav>
+						<a href="{{ url_for('about') }}">About</a>
+						<a href="{{ url_for('councils') }}">Councils</a>
+						<a href="{{ url_for('timeline') }}">Timeline</a>
+						<a href="{{ url_for('resources') }}">Resources</a>
+						<a href="{{ url_for('secretariat') }}">Secretariat</a>
+					</nav>
+					<!-- <div class="menu-bar"><span class="lnr lnr-menu"></span></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- End Header Area -->
+
+	<!-- Start Banner Area -->
+	<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/test.jpg') }}">
+		<div class="container">
+
+			<div class="row fullscreen align-items-center justify-content-center">
+				<div class="col-lg-10">
+					<div class="banner-content text-center">
+						<img src="{{ url_for('static', filename='img/logo.png') }}" width="700px" class="align-items-center">
+						<h1 class="text-uppercase text-white">TLMUN 2021</h1>
+						<button>Apply Now!
+							<span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!-- Start letter Area -->
+	<section class="letter-area">
+		<div class="container">
+			<div class="row">
+				<div class="header-letter">
+					<h3>A LETTER FROM THE SECRETARY-GENERAL</h3>
+					<p>Dear Delegates and Faculty Advisers,<br><br>
+
+						It is my distinct pleasure and honor to invite you to join us at the sixty-seventh session of Harvard National Model United Nations, HNMUN’s first virtual session! Hosted during HNMUN’s original dates of Thursday, 11 February to Sunday, 14 February 2021, HNMUN is more than an average Model UN conference. Indeed, no matter what the year, HNMUN is a forum for over 2500 delegates from more than 40 countries to discuss the world’s most pressing issues and construct balanced and integrated solutions to intricate issues of international importance. Even online, at HNMUN delegates form lasting friendships and connections that traverse boundaries, cross cultures, and last longer than the four days we share at conference. Staffed by over 150 undergraduate Harvard students, HNMUN continues to be the oldest, largest, and most prestigious conference of its kind, and our entire staff is excited to continue this legacy as we embark on our journey to the Sixty-Seventh Session.								
+						<br><br>
+						This year, HNMUN has made the difficult yet exciting decision to move entirely online in order to best protect the safety and wellbeing of our delegates, Faculty Advisors, and staff. While HNMUN 2021 will not look exactly as the Secretariat had originally hoped, we have tackled this challenge head-on and remain committed to a conference that serves as a forum for high level, genuine dialogue among peers. Though HNMUN may look slightly different than in years past, we are excited to offer lower prices and smaller, more intimate committees in order to provide an excellent experience for all in a virtual format.
+						<br><br>
+						Over the coming weeks, we will release more information about the transition online for HNMUN, including finalized committees and a Country Matrix. We have extended the Priority Registration deadline until 1 November, and you can still apply through our exclusive online registration platform, MUNBase, which is also linked at the top of this website. I urge you to peruse this website, which has been updated to reflect our new format, and if you have any specific questions you do not find answered, please contact us at info@hnmun.org. 
+						
+						<br><br>Best regards,  
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End letter Area -->
+{% endblock %}
+
