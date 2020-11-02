@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+
+{% block title %}FAQ - TLMUN{% endblock %}
+
+{% block content %}
+<header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li class="active"><a href="#{{ url_for('faq') }}">FAQ</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+</header>
+
+<!-- =======  F.A.Q Section ======= -->
+<section id="faq">
+
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Frequently Asked Questions (FAQ) </h2>
+        <h4>TLMUN is going virtual! If you do not find the answer to your question below or on this website, please feel free to contact us at <strong>info@tlmun.org</strong>.</h4>
+      </div>
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-9">
+          <ul id="faq-list">
+
+            <li>
+              <a data-toggle="collapse" class="collapsed" href="#faq1">Do I have to be located in Malaysia to participate in TLMUN? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq1" class="collapse" data-parent="#faq-list">
+                <p>
+                    <strong>Not at all!</strong> Each year, over half of our delegates come from Malaysia, and we expect to exceed that number this year. While TLMUN will be held on a Singapore Standard Time (SGT) schedule, we are working to provide a schedule that enables all to participate, regardless of whether or not they are located in Malaysia. TLMUN's only requirement for participation is that all delegates are currently enrolled in a college or university.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq2" class="collapse" data-parent="#faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq3" class="collapse" data-parent="#faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq4" class="collapse" data-parent="#faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq5" class="collapse" data-parent="#faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="fa fa-minus-circle"></i></a>
+              <div id="faq6" class="collapse" data-parent="#faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+</section><!-- End  F.A.Q Section -->
+{% endblock %}
