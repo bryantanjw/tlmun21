@@ -2169,16 +2169,27 @@ body {
   line-height: 1.15em;
   text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5);
 }
-
+.banner-content .main-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: 30px;
+  margin-top: 20px;
+}
+/* .banner-content .boxed {
+  background-color: rgba(138, 25, 25, 0.466);
+  padding: 60px;
+} */
 @media (max-width: 991px) {
   .banner-content h1 {
     font-size: 36px;
   }
 }
-
 @media (max-width: 991px) {
   .banner-content h1 br {
     display: none;
+  }
+  .banner-content .main-text {
+    font-size: 19px;
   }
 }
 
@@ -3186,7 +3197,7 @@ body {
   transform: scale(1.2) translate(25px, 15px);
 }
 #councils section.p10 {
-  background-image: url("//caraujo_pens.surge.sh/images/uZlR2bB.jpg");
+  background-image: url("https://images.unsplash.com/photo-1575320181282-9afab399332c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
 }
 #councils section.p10 a {
   width: 353px;
@@ -3253,7 +3264,7 @@ body {
   border-right-width: 12px;
 }
 #councils section.p11 {
-  background-image: url("//caraujo_pens.surge.sh/images/OfpVvOs.jpg");
+  background-image: url("https://images.unsplash.com/photo-1447804427549-a04e13f319b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
 }
 #councils section.p11 a {
   width: 314px;
@@ -3301,7 +3312,7 @@ body {
   opacity: 1;
 }
 #councils section.p12 {
-  background-image: url("//caraujo_pens.surge.sh/images/QYS0sMB.jpg");
+  background-image: url("https://images.unsplash.com/photo-1603905617672-59d29977267d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1645&q=80");
 }
 #councils section.p12 a {
   padding-top: 50px;
@@ -3384,7 +3395,7 @@ body {
   transform: scale(1) translate(10px);
 }
 #councils section.p15 {
-  background-image: url("//caraujo_pens.surge.sh/images/TC4rvkU.jpg");
+  background-image: url("https://peacekeeping.un.org/sites/default/files/styles/1200x500/public/727731_0.jpg?itok=NotTVQ7a");
 }
 #councils section.p15 a {
   width: 274px;
@@ -3618,7 +3629,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   animation: voavoa2 0.1s infinite linear;
 }
 #councils section.p19 {
-  background-image: url("//caraujo_pens.surge.sh/images/JXtviCi.jpg");
+  background-image: url("https://images.unsplash.com/photo-1557081998-05f784dcdd41?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
 }
 #councils section.p19 a {
   width: 330px;
@@ -4945,7 +4956,6 @@ img {
   color: black;
   margin-bottom: 20px;
   word-spacing: 0.5px;
-  letter-spacing: 0.5px;
   line-height: 1.6;
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
@@ -4973,4 +4983,7 @@ img {
 
 #faq #faq-list a.collapsed i::before {
   content: "\f055" !important;
+}
+.animate-box {
+  opacity: 0;
 }

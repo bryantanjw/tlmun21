@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}Councils — TLMUN{% endblock %}
+
+{% block content %}
+<!-- Start Header Area -->
+<header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li class="active"><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+</header>
+<!-- End Header Area -->
+{% endblock %}
