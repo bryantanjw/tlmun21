@@ -29,6 +29,10 @@ def resources():
 def secretariat():
     return render_template('secretariat.html')
 
+@app.route("/faq")
+def faq():
+    return render_template('faq.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

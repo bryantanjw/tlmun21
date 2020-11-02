@@ -3,89 +3,89 @@
 {% block title %}Councils — TLMUN{% endblock %}
 
 {% block content %}
-    <header class="default-header">
+<header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li class="active"><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li><a href="#{{ url_for('faq') }}">FAQ</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+</header>
+    <section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.jpg') }}" style="height: 800px;">
         <div class="container">
-            <div class="header-wrap">
-                <div class="header-top d-flex justify-content-between align-items-center">
-                    <div class="logo">
-                        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt=""></a>
-                    </div>
-                    <div class="main-menubar d-flex align-items-center" style="filter: brightness(1)">
-                        <nav>
-                            <a href="{{ url_for('about') }}">About</a>
-                            <a href="{{ url_for('councils') }}">Councils</a>
-                            <a href="{{ url_for('timeline') }}">Timeline</a>
-                            <a href="{{ url_for('resources') }}">Resources</a>
-                            <a href="{{ url_for('secretariat') }}">Secretariat</a>
-                        </nav>
-                        <!-- <div class="menu-bar"><span class="lnr lnr-menu"></span></div> -->
+
+            <div class="row fullscreen align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner-content text-center">
+                        <img src="{{ url_for('static', filename='img/logo-3.png') }}" width="200px" class="align-items-center mb-2">
+                        <h1 class="text-uppercase text-white ml-4 council-heading" style="font-size: 100px;">Councils.</h1>
+                        <h4 class="mt-5">The committees of TLMUN 2021 are sorted into several organs depending on their size, purpose, and structure.  More committee information will become available in the coming weeks.</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <section id="councils" class="mb-5">
 
-        <section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.jpg') }}" style="height: 800px;">
-            <div class="container">
-    
-                <div class="row fullscreen align-items-center justify-content-center">
-                    <div class="col-lg-10">
-                        <div class="banner-content text-center">
-                            <img src="{{ url_for('static', filename='img/logo-3.png') }}" width="200px" class="align-items-center mb-2">
-                            <h1 class="text-uppercase text-white ml-4 council-heading" style="font-size: 100px;">Councils.</h1>
-                            <h4 class="mt-5">The committees of TLMUN 2021 are sorted into several organs depending on their size, purpose, and structure.  More committee information will become available in the coming weeks.</h4>
-                        </div>
-                    </div>
-                </div>
+    <section class="p10">
+        <a href="">SPECPOL</a>
+    </section>
+    <section class="p11">
+        <a href="">
+            UNESCO
+        </a>
+
+    </section>
+    <section class="p12">
+        <a href=""  data-content="UNHRC">UNHCR</a>
+
+    </section>
+
+    <section class="p14">
+        <a href="">
+            UNOOSA
+        </a>
+
+    </section>
+    <section class="p15">
+        <a href="">sc
+            <div class="t1">
+                <div class="in"></div>
             </div>
-        </section>
-        <section id="councils" class="mb-5">
-
-        <section class="p10">
-            <a href="">SPECPOL</a>
-        </section>
-        <section class="p11">
-            <a href="">
-                UNESCO
-            </a>
-
-        </section>
-        <section class="p12">
-            <a href=""  data-content="UNHRC">UNHCR</a>
-
-        </section>
-
-        <section class="p14">
-            <a href="">
-                UNOOSA
-            </a>
-
-        </section>
-        <section class="p15">
-            <a href="">sc
-                <div class="t1">
-                    <div class="in"></div>
-                </div>
-                <div class="t2">
-                    <div class="in"></div>
-                </div>
-            </a>
-        </section>
-        <section class="p16">
-            <a href="">UNIDO</a>
-        </section>
-        <section class="p17">
-            <a href="">ECOSOC</a>
-        </section>
-        <section class="p18">
-            <a href="">
-        UNEA</a>
-        </section>
-        <section class="p19">
-            <a href="">CCPCJ
-                <div class="s1"></div>
-                <div class="s2"></div>
-            </a>
-        </section>
+            <div class="t2">
+                <div class="in"></div>
+            </div>
+        </a>
+    </section>
+    <section class="p16">
+        <a href="">UNIDO</a>
+    </section>
+    <section class="p17">
+        <a href="">ECOSOC</a>
+    </section>
+    <section class="p18">
+        <a href="">
+    UNEA</a>
+    </section>
+    <section class="p19 mb-5">
+        <a href="">CCPCJ
+            <div class="s1"></div>
+            <div class="s2"></div>
+        </a>
     </section>
 {% endblock %}
