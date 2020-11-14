@@ -2168,6 +2168,7 @@ body {
   font-weight: 700;
   line-height: 1.15em;
   text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5);
+  font-family: 'Times New Roman', Times, serif;
 }
 .banner-content .main-text {
   font-family: 'Times New Roman', Times, serif;
@@ -2211,7 +2212,7 @@ body {
 .banner-content h4{
   font-style: italic;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -2775,6 +2776,9 @@ body {
   padding-top: 220px;
   margin-bottom: 50px;
 }
+#about-area-2 {
+  margin-top: -130px;
+}
 .about-content h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 70px;
@@ -2788,6 +2792,10 @@ body {
   width: 100%;
   margin-top: 30px;
 }
+#about-area-2 img {
+  float: left;
+  width: 50%;
+}
 .about-letter {
   font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
@@ -2797,6 +2805,7 @@ body {
   padding-right: 200px;
   color: rgb(41, 38, 38);
   line-height: 1.6;
+  text-align: justify;
 }
 @media (max-width:767px) {
   .about-letter {
@@ -3111,6 +3120,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin: 0 auto 0px;
+  font-family: 'Times New Roman', Times, serif;
 }
 #councils section a {
   text-transform: uppercase;
@@ -4986,4 +4996,215 @@ img {
 }
 .animate-box {
   opacity: 0;
+}
+
+/*--------------------------------------------------------------
+# Resources Section
+--------------------------------------------------------------*/
+.resources-container {
+  margin-top: 250px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 797px) {
+  .resources-container .card {
+    width: 100% !important;
+  }
+  .resources-container .card h2 {
+    z-index: 5;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 20px;
+    right: 120px !important;
+    font-size: 40px !important;
+    font-weight: 700;
+    color: #fff;
+  }
+  .resources-container .card .fa-arrow-right {
+    color: white;
+    z-index: 10;
+    position: absolute;
+    right: 75px;
+    bottom: 22px !important;
+    font-size: 30px !important;
+    cursor: pointer;
+  }
+  .resources-container .card p {
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    right: 50px !important;
+    color: #333;
+    opacity: 0.7;
+    font-size: 12px !important;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+}
+.resources-container .card {
+  position: relative;
+  width: 750px;
+  height: 300px;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.resources-container .card:before {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  top: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.resources-container .card:after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  bottom: -10px;
+  left: 32px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.resources-container .card ul {
+  z-index: 3;
+  position: absolute;
+  left: 39px;
+  top: 5px;
+  list-style-type: none;
+}
+.resources-container .card ul li {
+  z-index: 3;
+  width: 2px;
+  height: 2px;
+  border-radius: 2px;
+  margin: 6px 0;
+  background-color: #ffffff;
+}
+.resources-container i {
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.resources-container .card h2 {
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 20px;
+  right: 180px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+.resources-container .card .fa-arrow-right {
+  color: white;
+  z-index: 10;
+  position: absolute;
+  right: 75px;
+  bottom: 25px;
+  font-size: 50px;
+  cursor: pointer;
+}
+.resources-container .card p {
+  z-index: 5;
+  position: absolute;
+  top: 20px;
+  right: 90px;
+  color: #333;
+  opacity: 0.7;
+  font-size: 18px;
+  letter-spacing: 1px;
+  writing-mode: vertical-lr;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.resources-container .card .pic {
+  z-index: 1;
+  width: 80%;
+  height: 100%;
+  background-image: url(../img/cm.jpg);
+  background-size: 100% 100%;
+  filter: grayscale(100%);
+}
+.resources-container .card .social {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 180px;
+  height: 64px;
+  border-radius: 80px;
+}
+.resources-container .card .social i:nth-of-type(1) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.resources-container .card .social i:nth-of-type(2) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.resources-container .card .social i:nth-of-type(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.resources-container .card .social i:nth-of-type(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.resources-container .card:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.resources-container .card button {
+  position: absolute;
+  z-index: 1;
+  right: 14px;
+  bottom: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: maroon;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+.resources-container .card:hover button {
+  transform: scale(16.5);
+}
+.resources-container .card:hover p {
+  color: #fff;
+}
+.resources-container .card:hover .pic {
+  filter: grayscale(0);
+}
+.resources-container .card2 .pic {
+  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
 }
