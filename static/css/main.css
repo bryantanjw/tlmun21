@@ -3109,7 +3109,7 @@ body {
 }
 
 #councils section {
-  height: 350px;
+  height: 400px;
   width: 100%;
   /* box-shadow: 0px 0px 146px 21px rgba(0, 0, 0, 1); */
   background-color: #000;
@@ -3274,16 +3274,16 @@ body {
   border-right-width: 12px;
 }
 #councils section.p11 {
-  background-image: url("https://images.unsplash.com/photo-1447804427549-a04e13f319b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80");
+  background-image: url(../img/yc.jpg);
 }
 #councils section.p11 a {
-  width: 314px;
+  width: 1000px;
   height: 78px;
   line-height: 78px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -157px;
+  margin-left: -510px;
   margin-top: -39px;
 }
 #councils section.p11 a:before, #councils section.p11 a:after {
@@ -3322,7 +3322,7 @@ body {
   opacity: 1;
 }
 #councils section.p12 {
-  background-image: url("https://images.unsplash.com/photo-1603905617672-59d29977267d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1645&q=80");
+  background-image: url(../img/wha.jpg);
 }
 #councils section.p12 a {
   padding-top: 50px;
@@ -3333,7 +3333,6 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -220px;
-  margin-top: -100px;
   margin-top: -150px;
 }
 #councils section.p12 a:before {
@@ -3405,7 +3404,7 @@ body {
   transform: scale(1) translate(10px);
 }
 #councils section.p15 {
-  background-image: url("https://peacekeeping.un.org/sites/default/files/styles/1200x500/public/727731_0.jpg?itok=NotTVQ7a");
+  background-image: url(../img/dr.jpg);
 }
 #councils section.p15 a {
   width: 274px;
@@ -3436,9 +3435,9 @@ body {
 }
 #councils section.p15 a .t1 {
   height: 60px;
-  width: 48px;
   top: 0%;
-  left: -48px;
+  top: 50%;
+  left: -50px;
   position: absolute;
 }
 #councils section.p15 a .t1 *, #councils section.p15 a .t1:before, #councils section.p15 a .t1:after {
@@ -3459,8 +3458,8 @@ body {
 #councils section.p15 a .t2 {
   height: 60px;
   width: 48px;
-  top: 0%;
-  right: -48px;
+  top: 50%;
+  right: -100px;
   position: absolute;
 }
 #councils section.p15 a .t2 *, #councils section.p15 a .t2:before, #councils section.p15 a .t2:after {
@@ -3512,16 +3511,16 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   transition-delay: 0s;
 }
 #councils section.p16 {
-  background-image: url("//caraujo_pens.surge.sh/images/KBhOYIr.jpg");
+  background-image: url(../img/ce.jpeg);
 }
 #councils section.p16 a {
-  width: 632px;
+  width: 1000px;
   height: 124px;
   line-height: 124px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -316px;
+  margin-left: -530px;
   margin-top: -62px;
   z-index: 10;
   overflow: hidden;
@@ -5003,7 +5002,7 @@ img {
 --------------------------------------------------------------*/
 .resources-container {
   margin-top: 250px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   width: 100%;
   height: 100%;
   display: flex;
