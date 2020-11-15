@@ -9,7 +9,7 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="img-fluid"></a>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-white.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
@@ -20,99 +20,126 @@
           <li><a href="{{ url_for('resources') }}">Resources</a></li>
           <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
           <li><a href="{{ url_for('faq') }}">FAQ</a></li>
-
         </ul>
       </nav><!-- .nav-menu -->
 
     </div>
-  </header>
+</header>
 
 
-<section id="schedule-section" class="schedule-section section">
-    <div class="container">
-        <h3 class="section-heading text-center mb-5" style="font-size: 2.5rem;">Schedule</h3>
-        
-        <!-- Nav tabs -->
-        <ul class="schedule-nav nav nav-pills nav-fill" id="myTab" role="tablist">
-            <li class="nav-item mr-2">
-                <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab-1-content" role="tab" aria-controls="tab-1-content" aria-selected="true">
-                    <span class="heading">Day 1</span>
-                    <span class="meta">(Wed 12, Oct)</span>
-                </a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab-2-content" role="tab" aria-controls="tab-2-content" aria-selected="false">
-                    <span class="heading">Day 2</span>
-                    <span class="meta">(Thu 13, Oct)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab-3-content" role="tab" aria-controls="tab-3-content" aria-selected="false">
-                    <span class="heading">Day 3</span>
-                    <span class="meta">(Fri 14, Oct)</span>
-                </a>
-            </li>
-        </ul>
-        
-        <!-- Tab panes -->
-        <div class="schedule-tab-content tab-content mt-4">
-            <div class="tab-pane active" id="tab-1-content" role="tabpanel" aria-labelledby="tab-1">
-                <div class="item item-talk">
-                    <div class="meta">
-                        <h4 class="time mb-3">9:00 - 9:30</h4>
-                    </div><!--//meta-->
-                    <div class="content">
-                        <h3 class="title mb-3">Opening Ceremony</h3>
-                        <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Zoom</div>
-                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-                    </div><!--//content-->
-                </div><!--//item-->
-        
-                <div class="item item-other">
-                    <div class="meta">
-                        <h4 class="time mb-3">12:00 - 13:30</h4>
-                    </div><!--//meta-->
-                    <div class="content">
-                        <h3 class="title mb-3">Lunch Break</h3>
-                        <!-- <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Room B6</div> -->
-                        <div class="desc">Buffet lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
-                    </div><!--//content-->
-                </div><!--//item-->
-
-                <div class="item item-talk">
-                    <div class="meta">
-                        <h4 class="time mb-3">16:30 - 17:30</h4>
-                    </div><!--//meta-->
-                    <div class="content">
-                        <h3 class="title mb-3">Debate Session</h3>
-                        <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Discord</div>
-                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-                    </div><!--//content-->
-                </div><!--//item-->
-                <div class="item item-other">
-                    <div class="meta">
-                        <h4 class="time mb-3">18:00 - 20:00</h4>
-                    </div><!--//meta-->
-                    <div class="content">
-                        <h3 class="title mb-3">Dinner &amp; After-party</h3>
-                        <!-- <div class="location mb-3"><i class="fa fa-map-marker mr-2"></i>Bar Lorem Ipsum</div> -->
-                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis ornare nibh, pulvinar posuere justo. Aenean laoreet nunc a eleifend lacinia. Phasellus dignissim augue at consectetur ullamcorper. </div>
-                    </div><!--//content-->
-                </div><!--//item-->
-                
-            </div><!--//tab-1-content-->
-            <div class="tab-pane no-timeline" id="tab-2-content" role="tabpanel" aria-labelledby="tab-2">
-                <h4 class="text-center py-5 text-muted">Day 2 Agenda Coming Soon...</h4>
-            </div><!--//tab-2-content-->
-            <div class="tab-pane no-timeline" id="tab-3-content" role="tabpanel" aria-labelledby="tab-3">
-                <h4 class="text-center py-5 text-muted">Day 3 Agenda Coming Soon...</h4>
-            </div><!--//tab-3-content-->
-        </div><!--//schedule-tab-content-->
-        <div class="about-btn">
-            <button class="mb-5">Download Schedule
-                <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
-            </button>
+<div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+      <h2 class="timeline-header__title">TLMUN 2021 Itinerary</h2>
+      <h3 class="timeline-header__subtitle">All times displayed in GMT+8</h3>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-text="2:30 - 6.00 pm">
+        <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+          <h2 class="timeline__content-title">DAY 1</h2>
+          <h2 class="timeline__content-desc"> 
+            2.30 - 2.45 pm:<br><strong>Registration/Preparation</strong><br><br>
+            2.45 - 3.30 pm:<br><strong>Committee Session 1</strong><br><br>
+            3.30 pm - 4.00 pm:<br><strong>Opening Ceremony</strong><br><br>
+            4.00 pm - 6.00 pm:<br><strong>Committee Session 2</strong>
+        </h2>
         </div>
-    </div><!--//container-->
-</section><!--//schedule-section-->
+      </div>
+      <div class="timeline-item" data-text="8.45 - 6.00 pm">
+        <div class="timeline__content"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+          <h2 class="timeline__content-title">DAY 2</h2>
+          <h2 class="timeline__content-desc">
+            8.45 - 9.00 am:<br><strong>Preparation</strong><br><br>
+            9.00 - 10.45 am:<br><strong>Council Session 3</strong><br><br>
+            10.45 - 11.00 am:<br><strong>Break</strong><br><br>
+            11.00 - 12.30 pm:<br><strong>Council Session 4</strong><br><br>
+            12.30 - 2.30 pm:<br>Lunch<br><br>
+            2.30 - 4.00 pm:<br>Council Session 5<br><br>
+            4.00 - 4.15 pm:<br>Break<br><br>
+            4.15 - 6.00 pm:<br>Council Session 6 
+        </h2>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="8.45 - 6.00 pm">
+        <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
+          <h2 class="timeline__content-title">DAY 3</h2>
+          <h2 class="timeline__content-desc">
+            8.45 - 9.00 am:<br>Preparation<br><br>
+            9.00 - 10.45 am:<br>Council Session 3<br><br>
+            10.45 - 11.00 am:<br>Break<br><br>
+            11.00 - 12.30 pm:<br>Council Session 4<br><br>
+            12.30 - 2.30 pm:<br>Lunch<br><br>
+            2.30 - 4.00 pm:<br>Council Session 5<br><br>
+            4.00 - 4.15 pm:<br>Break<br><br>
+            4.15 - 6.00 pm:<br>Council Session 6 
+          </h2>
+        </div>
+      </div>
+
+    <button>DOWNLOAD SCHEDULE
+        <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+    </button>
+    
+      <!-- <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://cdn.yemek.com/uploads/2014/11/ataturk-10-kasim.jpg"/>
+          <h2 class="timeline__content-title">1908</h2>
+          <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in Salonica andIstanbul and as a military attache in Sofia.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
+          <h2 class="timeline__content-title">1915</h2>
+          <p class="timeline__content-desc">In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive victories and finally repelling the invaders.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://blog.istanbul1881.com/wp-content/uploads/2016/08/atat%C3%BCrk-%C3%BCn-inan%C4%B1lmaz-karizmatik-fotograf%C4%B1_861050.jpg"/>
+          <h2 class="timeline__content-title">1916</h2>
+          <p class="timeline__content-desc">Promotedto general in 1916, at age 35, he liberated two major provinces in eastern Turkey thatyear. In the next two years, he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere, achieving another major victory by stopping the enemyadvance at Aleppo.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg"/>
+          <h2 class="timeline__content-title">1919</h2>
+          <p class="timeline__content-desc">On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to startthe War of Independence. In defiance of the Sultan's government, he rallied a liberationarmy in Anatolia and convened the Congress of Erzurum and Sivas which established thebasis for the new national effort under his leadership.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
+          <h2 class="timeline__content-title">1920</h2>
+          <p class="timeline__content-desc">
+            On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency.
+            Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+          <h2 class="timeline__content-title">1922</h2>
+          <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
+          <h2 class="timeline__content-title">1923</h2>
+          <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+          <h2 class="timeline__content-title">1934</h2>
+          <p class="timeline__content-desc">
+            The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+            In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="FATHER OF THE TURKS">
+        <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
+          <h2 class="timeline__content-title">1938</h2>
+          <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
 {% endblock %}
