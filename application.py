@@ -16,6 +16,15 @@ def about():
 @app.route("/councils")
 def councils():
     return render_template('councils.html')
+@app.route("/councils/yalta")
+def yalta():
+    return render_template('yalta.html')
+@app.route("/councils/unsc")
+def unsc():
+    return render_template('unsc.html')
+@app.route("/councils/dewan_rakyat")
+def dewan_rakyat():
+    return render_template('dewan_rakyat.html')
 
 @app.route("/timeline")
 def timeline():

@@ -26,67 +26,68 @@
 
     </div>
 </header>
-    <section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.jpg') }}" style="height: 800px;">
-        <div class="container">
 
-            <div class="row fullscreen align-items-center justify-content-center">
-                <div class="col-lg-10">
-                    <div class="banner-content text-center">
-                        <!-- <img src="{{ url_for('static', filename='img/logo-3.png') }}" width="200px" class="align-items-center mb-2"> -->
-                        <h1 class="text-uppercase text-white ml-4 council-heading" style="font-size: 100px;">Councils.</h1>
-                        <h4 class="mt-5">The committees of TLMUN 2021 are sorted into several organs depending on their size, purpose, and structure.  More committee information will become available in the coming weeks.</h4>
-                    </div>
+<section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.jpg') }}" style="height: 800px;">
+    <div class="container">
+
+        <div class="row fullscreen align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="banner-content text-center">
+                    <!-- <img src="{{ url_for('static', filename='img/logo-3.png') }}" width="200px" class="align-items-center mb-2"> -->
+                    <h1 class="text-uppercase text-white ml-4 council-heading" style="font-size: 100px;">Councils.</h1>
+                    <h4 class="mt-5">The committees of TLMUN 2021 are sorted into several organs depending on their size, purpose, and structure.  More committee information will become available in the coming weeks.</h4>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="councils" class="mb-5">
+    </div>
+</section>
+<section id="councils" class="mb-5">
 
-    <!-- <section class="p10">
-        <a href="">Yalta Conference of 1945</a>
-    </section> -->
-    <section class="p11">
-        <a href="">
-            Yalta Conference of 1945
-        </a>
+<!-- <section class="p10">
+    <a href="">Yalta Conference of 1945</a>
+</section> -->
+<section class="p11">
+    <a href="{{ url_for('yalta') }}">
+        Yalta Conference of 1945
+    </a>
 
-    </section>
+</section>
 
-    <section class="p14">
-        <a href="">
-            UNSC
-        </a>
-    </section>
+<section class="p14">
+    <a href="{{ url_for('unsc') }}">
+        UNSC
+    </a>
+</section>
 
-    <section class="p12">
-        <a href=""  data-content="wha">wha</a>
+<section class="p12">
+    <a href=""  data-content="wha">wha</a>
 
-    </section>
-    
-    <section class="p15">
-        <a href="">Dewan Rakyat
-            <div class="t1">
-                <div class="in"></div>
-            </div>
-            <div class="t2">
-                <div class="in"></div>
-            </div>
-        </a>
-    </section>
-    <section class="p16">
-        <a href="">The Concert of Europe</a>
-    </section>
-    <!-- <section class="p17">
-        <a href="">ECOSOC</a>
-    </section> -->
-    <!-- <section class="p18">
-        <a href="">
-    UNEA</a>
-    </section> -->
-    <section class="p19 mb-5">
-        <a href="">UNHRC
-            <div class="s1"></div>
-            <div class="s2"></div>
-        </a>
-    </section>
+</section>
+
+<section class="p15">
+    <a href="{{ url_for('dewan_rakyat') }}">Dewan Rakyat
+        <div class="t1">
+            <div class="in"></div>
+        </div>
+        <div class="t2">
+            <div class="in"></div>
+        </div>
+    </a>
+</section>
+<section class="p16">
+    <a href="">The Concert of Europe</a>
+</section>
+<!-- <section class="p17">
+    <a href="">ECOSOC</a>
+</section> -->
+<!-- <section class="p18">
+    <a href="">
+UNEA</a>
+</section> -->
+<section class="p19 mb-5">
+    <a href="">UNHRC
+        <div class="s1"></div>
+        <div class="s2"></div>
+    </a>
+</section>
 {% endblock %}

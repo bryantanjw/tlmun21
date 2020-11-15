@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block title %}About — TLMUN{% endblock %}
+
+{% block content %}
+<!-- Start Header Area -->
+<header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+<!-- End Header Area -->
+
+<section class="banner-area relative" id="council-indi" style="background-image: pink;">
+    <div class="container">
+        <div class="row fullscreen align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="banner-content text-center apply-btn">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" width="700px" class="align-items-center">
+                    <div class="boxed">
+                        <h1 class="text-uppercase text-white">Dewan Rakyat (DR)</h1>
+                        <h4 class="main-text">
+                            TOPIC A: Amendment of Syariah Courts (Criminal Jurisdiction) Act (RUU355)
+                            <br>
+                            TOPIC B: Discussing the Malaysia Economic Stimulus Packages (ESP) 2020
+                        </h4>
+                        <p>
+                            The Dewan Rakyat is the lower chamber of the Malaysian Parliament which consists of democratically elected members from federal constituencies and has the potential to shape the country’s future through its legislation or constitutional amendments by passing bills in its chamber. It is up to the Members of Parliament (MPs) to decide on the legislation in order to ensure the prosperity of the Rakyat and secure the nation’s vision to be a developed country.
+                            <br><br>
+                            The Standing Orders of the Dewan Rakyat will be conducted.
+                            <br><br>
+                            *It will be conducted in both English and Bahasa Malaysia
+                        </p>
+                    </div>
+                    <button>Apply Now!
+                        <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
