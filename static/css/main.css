@@ -2301,7 +2301,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #000000;
+    background: #ffffff;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -2320,6 +2320,9 @@ body {
     .apply-btn button:hover .iconify {
       -webkit-transform: translateX(4px);
       transform: translateX(4px); }
+      .apply-btn button:hover {
+        color: black;
+      }
 
 .letter-area {
   padding-top: 150px;
@@ -5015,15 +5018,16 @@ img {
 }
 @media (max-width: 797px) {
   .resources-container .card {
-    width: 100% !important;
+    width: 90% !important;
+    height: 30vh !important;
   }
   .resources-container .card h2 {
     z-index: 5;
     font-family: "Poppins", sans-serif;
     position: absolute;
     bottom: 20px;
-    right: 120px !important;
-    font-size: 40px !important;
+    right: 110px !important;
+    font-size: 28px !important;
     font-weight: 700;
     color: #fff;
   }
@@ -5208,5 +5212,11 @@ img {
   filter: grayscale(0);
 }
 .resources-container .card2 .pic {
-  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
+  background-image: url(../img/report.jpg);
+}
+.resources-container .card3 .pic {
+  background-image: url(../img/conference.jpg);
+}
+.resources-container .card4 .pic {
+  background-image: url(../img/award.jpg);
 }
