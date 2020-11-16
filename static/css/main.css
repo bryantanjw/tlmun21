@@ -3264,16 +3264,22 @@ body {
   transform: scale(1.2) translate(25px, 15px);
 }
 #councils section.p10 {
-  background-image: url("https://images.unsplash.com/photo-1575320181282-9afab399332c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  background-image: url(../img/yalta-main.png);
+}
+@media (max-width:797px) {
+  #councils section.p10 a {
+    font-size: 33px;
+    line-height: 40px !important;
+    left: 14% !important;
+  }
 }
 #councils section.p10 a {
-  width: 353px;
+  width: 72%;
   height: 94px;
   line-height: 94px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-left: -176.5px;
+  left: 15%;
   margin-top: -47px;
 }
 #councils section.p10 a:before, #councils section.p10 a:after {
@@ -3331,7 +3337,7 @@ body {
   border-right-width: 12px;
 }
 #councils section.p11 {
-  background-image: url(../img/yc.jpg);
+  background-image: url(../img/yalta-main.jpg);
 }
 #councils section.p11 a {
   width: 1000px;
@@ -3415,16 +3421,15 @@ body {
   animation: montanhaDaAlegria 0.9s forwards linear;
 }
 #councils section.p14 {
-  background-image: url(../img/unsc.jpg);
+  background-image: url(../img/coe.jpg);
 }
 #councils section.p14 a {
-  width: 322px;
+  width: 70%;
   height: 94px;
   line-height: 94px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  margin-left: -161px;
+  left: 11%;
   margin-top: -47px;
   z-index: 10;
 }
@@ -3441,7 +3446,7 @@ body {
   transition: all 1s cubic-bezier(0.45, 0.76, 0.58, 0.94);
 }
 #councils section.p14 a:before {
-  background-color: #000;
+  background-color: #e2e2e2;
   z-index: -1;
 }
 #councils section.p14 a:after {
@@ -3461,7 +3466,12 @@ body {
   transform: scale(1) translate(10px);
 }
 #councils section.p15 {
-  background-image: url(../img/dr.jpg);
+  background-image: url(../img/unsc.jpg);
+}
+@media (max-width: 797px) {
+  #councils section.p15 a {
+    left: 47% !important;
+  }
 }
 #councils section.p15 a {
   width: 274px;
@@ -3470,8 +3480,7 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
-  margin-left: -137px;
-  margin-top: -29px;
+  margin-left: -120px;
   line-height: 1;
 }
 #councils section.p15 a .in, #councils section.p15 a .t1:before, #councils section.p15 a .t1:after, #councils section.p15 a .t2:before, #councils section.p15 a .t2:after {
@@ -3492,9 +3501,7 @@ body {
 }
 #councils section.p15 a .t1 {
   height: 60px;
-  top: 0%;
-  top: 50%;
-  left: -50px;
+  top: 0;
   position: absolute;
 }
 #councils section.p15 a .t1 *, #councils section.p15 a .t1:before, #councils section.p15 a .t1:after {
@@ -3513,10 +3520,10 @@ body {
   top: 45px;
 }
 #councils section.p15 a .t2 {
+  top: 0;
   height: 60px;
   width: 48px;
-  top: 50%;
-  right: -100px;
+  right: -45px;
   position: absolute;
 }
 #councils section.p15 a .t2 *, #councils section.p15 a .t2:before, #councils section.p15 a .t2:after {
@@ -3567,8 +3574,14 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   -moz-transition-delay: 0s;
   transition-delay: 0s;
 }
+
 #councils section.p16 {
-  background-image: url(../img/ce.jpeg);
+  background-image: url(../img/dr.jpg);
+}
+@media (max-width: 797px) {
+  #councils section.p16 a {
+    font-size: 50px;
+  }
 }
 #councils section.p16 a {
   width: 1000px;
@@ -3577,7 +3590,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -530px;
+  margin-left: -500px;
   margin-top: -62px;
   z-index: 10;
   overflow: hidden;
@@ -3619,15 +3632,22 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   transition-delay: .2s;
 }
 #councils section.p17 {
-  background-image: url("//caraujo_pens.surge.sh/images/cNmoLmL.jpg");
+  background-image: url(../img/coe.jpg);
+}
+@media (max-width: 797px) {
+  #councils section.p17 a {
+    font-size: 35px;
+    width: 80vh !important;
+    left: 48% !important;
+  }
 }
 #councils section.p17 a {
-  width: 546px;
+  width: 70%;
   height: 94px;
   line-height: 94px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   margin-left: -273px;
   margin-top: -47px;
 }
@@ -4481,12 +4501,13 @@ img {
   display: block;
   margin-bottom: 50px;
 }
+
 .portfolio-wrap p {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   letter-spacing: 0.5px;
   word-spacing: 0.5px;
-  width: 95%;
+  width: 85%;
 }
 .portfolio-wrap img {
   width: 450px;
@@ -4506,113 +4527,8 @@ img {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.box15 .box-content {
-  width: 450px;
-  height: 450px;
-  position: absolute;
-  top: 0;
-  left: 15px;
-  transition: all .5s ease 0s;
-}
-.box15:hover .box-content {
-  background-color: #882424d7;
-}
-.box15 .box-content:after, .box15 .box-content:before {
-  content: "";
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  opacity: 0;
-  transform: scale(1.5);
-  transition: all .6s ease .3s;
-}
-.box15 .box-content:before {
-  border-left: 1px solid #040404;
-  border-top: 1px solid #040404;
-  top: 19px;
-  left: 19px;
-}
-.box15 .box-content:after {
-  border-bottom: 1px solid #040404;
-  border-right: 1px solid #040404;
-  bottom: 19px;
-  right: 19px;
-}
-.box15:hover .box-content:after, .box15:hover .box-content:before {
-  opacity: 1;
-  transform: scale(1);
-}
-.box15 .title {
-  font-size: 22px;
-  color: #000;
-  margin: 0;
-  position: absolute;
-  left: 35%;
-  opacity: 0;
-  transition: all 1s ease 10ms;
-}
-.box15:hover .title {
-  top: 39%;
-  opacity: 1;
-  transition: all .5s cubic-bezier(1, -.53, .405, 1.425) 10ms;
-}
-.box15 .title:after {
-  content: "";
-  width: 0;
-  height: 1px;
-  background: #040404;
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: all 1s ease 0s;
-}
-.box15:hover .title:after {
-  width: 80%;
-  transition: all 1s ease .8s;
-}
-.box15 .icon {
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  transition-duration: .6s;
-  transition-timing-function: cubic-bezier(1, -.53, .405, 1.425);
-  transition-delay: .1s;
-}
-.box15:hover .icon {
-  bottom: 39%;
-  opacity: 1;
-}
-.box15 .icon li {
-  display: inline-block;
-}
-.box15 .icon li a {
-  left: 180px;
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 40px;
-  font-size: 21px;
-  color: #000;
-  margin-right: 5px;
-  transition: all .3s ease-in-out 0s;
-}
-.box15 .icon li a:hover {
-  color: #fff;
-}
-@media only screen and (max-width:990px) {
-  .box15 {
-  margin-bottom: 30px;
-  }
-}
-
 .hero-banner {
   padding-top: 160px !important;
-  margin-right: 100px;
 }
 .card-img {
   width: 100%;
@@ -4693,6 +4609,16 @@ img {
 }
 .hero-wrapper {
   position: relative;
+  margin-right: 120px;
+}
+@media (max-width: 797px) {
+  .hero-wrapper {
+    margin-right: 0;
+  }
+  .secretariat-logo {
+    width: 300px;
+    margin-left: 100px !important;
+  }
 }
 .hero-wrapper .social-icons {
   position: absolute;
@@ -4826,7 +4752,7 @@ img {
 }
 .section-intro {
   margin-top: 50px;
-  max-width: 500px;
+  max-width: 800px;
   margin-bottom: 30px;
 }
 .section-intro img {
@@ -4834,7 +4760,8 @@ img {
 }
 .section-intro .intro-title {
   display: inline-block;
-  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
   color: #882424;
   padding-right: 115px;
   position: relative;
