@@ -50,6 +50,7 @@ html,body{height:100%;}
   font-weight: 300;
 }
 
+
 ol, ul {
   margin: 0;
   padding: 0;
@@ -1838,6 +1839,11 @@ h6 {
 .form-select .nice-select::after {
   right: 20px;
 }
+
+body {
+  position: relative;
+}
+
 .default-header {
   padding: 25px 0;
   position: absolute;
