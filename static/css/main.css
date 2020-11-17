@@ -6,6 +6,7 @@
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
+html,body{height:100%;}
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #ad1010;
