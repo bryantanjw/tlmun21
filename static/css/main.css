@@ -1916,6 +1916,9 @@ body {
   #header .logo h1 {
     font-size: 28px;
   }
+  #header .logo {
+    width: 130px;
+  }
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -2173,7 +2176,7 @@ body {
 
 @media (max-width: 767px) {
   .banner-content {
-    margin-top: 100px;
+    margin: 0 !important;
   }
 }
 
@@ -2250,6 +2253,9 @@ body {
 @media (max-width: 767px) {
   .banner-content p {
     margin-bottom: 20px;
+  }
+  .banner-content h4 {
+    padding: 0 !important;
   }
 }
 
@@ -2901,7 +2907,10 @@ body {
 }
 @media (max-width:767px) {
   .about-content h1 {
-    font-size: 40px;
+    font-size: 35px;
+  }
+  #intro {
+    height: 55vh !important;
   }
 }
 .about-content img {
