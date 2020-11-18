@@ -15,12 +15,12 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="{{ url_for('about') }}">About</a></li>
-          <li><a href="{{ url_for('councils') }}">Councils</a></li>
-          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
-          <li><a href="{{ url_for('resources') }}">Resources</a></li>
-          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
-          <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+          <li class="white-nav"><a href="{{ url_for('about') }}">About</a></li>
+          <li class="white-nav"><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li class="white-nav"><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li class="white-nav"><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li class="white-nav"><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li class="white-nav"><a href="{{ url_for('faq') }}">FAQ</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -30,14 +30,14 @@
 <!-- End Header Area -->
 
 	<!-- Start Banner Area -->
-	<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/home.jpg') }}">
+	<section class="banner-area relative" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/index.gif') }}">
 		<div class="container">
 			<div class="row fullscreen align-items-center justify-content-center">
 				<div class="col-lg-10">
 					<div class="banner-content text-center apply-btn">
 						<!-- <img src="{{ url_for('static', filename='img/logo.png') }}" width="700px" class="align-items-center"> -->
 						<div class="boxed">
-							<h1 class="text-uppercase text-white">TLMUN 20<r>21</r></h1>
+							<h1 class="text-uppercase text-white">TLMUN <r>2021</r></h1>
 							<h4 class="main-text">TLMUN is going virtual! Registration opens today!</h4>
 						</div>
 						<button>Apply Now!

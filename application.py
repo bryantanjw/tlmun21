@@ -22,7 +22,7 @@ def yalta():
 @app.route("/councils/unsc")
 def unsc():
     return render_template('unsc.html')
-@app.route("/councils/unsc")
+@app.route("/councils/dewan_rakyat")
 def dewan_rakyat():
     return render_template('dewan_rakyat.html')
 @app.route("/councils/unhrc")

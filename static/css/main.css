@@ -1956,7 +1956,12 @@ body {
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
 }
-
+.white-nav a {
+  color: rgb(206, 205, 205);
+}
+.white-nav a:hover {
+  color: white !important;
+}
 .nav-menu a:hover:before, .nav-menu li:hover > a:before, .nav-menu .active > a:before {
   visibility: visible;
   width: 25px;
@@ -2031,7 +2036,7 @@ body {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #4b4949;
+  color: #4b4949 !important;
   text-decoration: none;
 }
 
@@ -2042,7 +2047,7 @@ body {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(6, 8, 109, 0.6);
+  background: rgba(0, 0, 0, 0.37);
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
@@ -2082,7 +2087,10 @@ body {
     display: none;
   }
 }
-
+/* r highlight */
+r {
+  color: #9c0404;
+}
 .p1-gradient-bg, .primary-btn:after, .is-sticky .default-header, .single-img, .member-area .overlay-bg, .contact-area .primary-btn, .footer-social a:hover {
   background-image: -moz-linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
   background-image: -webkit-linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
@@ -2211,7 +2219,6 @@ body {
 @media (max-width: 767px) {
   .banner-content {
     margin: 0 !important;
-    padding-right: 12px;
   }
 }
 
@@ -2230,6 +2237,16 @@ body {
   font-style: initial;
   font-size: 30px;
   margin-top: 20px;
+}
+#council-indi .council-desc::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 5px;
+  background: #ad1010;
+  bottom: 0;
+  margin-left: 45%;
+  margin-bottom: 50px;
 }
 /* .banner-content .boxed {
   background-color: rgba(138, 25, 25, 0.466);
@@ -2291,6 +2308,9 @@ body {
   }
   .banner-content h4 {
     padding: 0 !important;
+  }
+  #council-indi .council-desc::before {
+    margin-left: 40%;
   }
 }
 
@@ -5385,4 +5405,22 @@ img {
 }
 .resources-container .card4 .pic {
   background-image: url(../img/award.jpg);
+}
+
+.gradient-bg {
+	background: linear-gradient(-45deg, #ffffff, #ffffff, #e6e5e5);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

@@ -9,17 +9,17 @@
       <div class="logo mr-auto">
         <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-red.png') }}" alt="" class="img-fluid"></a>
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-white.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="{{ url_for('about') }}">About</a></li>
-          <li class="active"><a href="{{ url_for('councils') }}">Councils</a></li>
-          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
-          <li><a href="{{ url_for('resources') }}">Resources</a></li>
-          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
-          <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+          <li class="white-nav"><a href="{{ url_for('about') }}">About</a></li>
+          <li class="active white-nav"><a href="{{ url_for('councils') }}" style="color: white;">Councils</a></li>
+          <li class="white-nav"><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li class="white-nav"><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li class="white-nav"><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li class="white-nav"><a href="{{ url_for('faq') }}">FAQ</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -27,14 +27,14 @@
     </div>
 </header>
 
-<section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.jpg') }}" style="height: 800px;">
+<section class="banner-area relative council-banner" id="home" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/un.png') }}" style="height: 800px;">
     <div class="container">
 
         <div class="row fullscreen align-items-center justify-content-center">
             <div class="col-lg-10">
                 <div class="banner-content text-center">
                     <!-- <img src="{{ url_for('static', filename='img/logo-3.png') }}" width="200px" class="align-items-center mb-2"> -->
-                    <h1 class="text-uppercase text-white ml-4 council-heading">Councils.</h1>
+                    <h1 class="text-uppercase text-white ml-4 council-heading">Councils<r>.</r></h1>
                     <h4 class="mt-5 council-text">The committees of TLMUN 2021 are sorted into several organs depending on their size, purpose, and structure.  More committee information will become available in the coming weeks.</h4>
                 </div>
             </div>
