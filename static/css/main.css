@@ -2145,28 +2145,69 @@ body {
 }
 #council-indi {
   height: 1200px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #council-indi img {
-  width: 400px;
+  width: 330px;
+  margin-bottom: 60px;
 }
 #council-indi h1 {
   font-size: 60px;
+  color: black !important;
 }
 #council-indi h4 {
-  font-size: 25px;
-  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
   padding-left: 0;
   padding-right: 0;
 }
 #council-indi p {
   margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: black;
+  margin-left: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
 }
+
 @media (max-width: 767px) {
   .banner-area .fullscreen {
     height: 850px !important;
   }
+  br {
+    display: block !important;
+  }
+  #council-indi {
+    padding-top: 120px;
+    width: 100%;
+    letter-spacing: 0.5px !important;
+  }
+  #council-indi .next-line {
+    display: block !important;
+  }
+  #council-indi img {
+    width: 200px;
+  }
+  #council-indi h1 {
+    font-size: 30px !important;
+    letter-spacing: 0.1 !important;
+  }
+  #council-indi h4 {
+    font-size: 18px !important;
+    letter-spacing: 0.1;
+    line-height: 1.15 !important;
+  }
+  #council-indi p {
+    margin-left: 0;
+    font-size: 16px;
+  }
 }
-
 @media (max-width: 767px) {
   .banner-content {
     margin: 0 !important;

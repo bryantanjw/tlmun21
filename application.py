@@ -22,9 +22,18 @@ def yalta():
 @app.route("/councils/unsc")
 def unsc():
     return render_template('unsc.html')
-@app.route("/councils/dewan_rakyat")
+@app.route("/councils/unsc")
 def dewan_rakyat():
     return render_template('dewan_rakyat.html')
+@app.route("/councils/unhrc")
+def unhrc():
+    return render_template('unhrc.html')   
+@app.route("/councils/concert_of_europe")
+def concertEurope():
+    return render_template('concertEurope.html')
+@app.route("/councils/wha")
+def wha():
+    return render_template('wha.html')
 
 @app.route("/timeline")
 def timeline():

@@ -15,8 +15,8 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{{ url_for('about') }}">About</a></li>
-          <li><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li class="active"><a href="{{ url_for('councils') }}">Councils</a></li>
           <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
           <li><a href="{{ url_for('resources') }}">Resources</a></li>
           <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
@@ -29,23 +29,36 @@
   </header><!-- End Header -->
 <!-- End Header Area -->
 
-<section class="banner-area relative" style="background-image: linear-gradient(to bottom right, black, white) !important;">
-    <div class="container">
-        <div class="row fullscreen align-items-center justify-content-center">
-            <div class="col-lg-10">
-                <div class="banner-content text-center apply-btn">
-                    <!-- <img src="{{ url_for('static', filename='img/logo.png') }}" width="700px" class="align-items-center"> -->
-                    <div class="boxed">
-                        <h1 class="text-uppercase text-white">TLMUN 2021</h1>
-                        <h4 class="main-text">TLMUN is going virtual! Registration opens today!</h4>
-                    </div>
-                    <button>Apply Now!
-                        <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
-                    </button>
-                </div>
-            </div>
+<section class="banner-area relative" id="council-indi">
+  <div class="container">
+    <div class="row fullscreen align-items-center justify-content-center">
+      <div class="col-lg-10">
+        <div class="banner-content text-center">
+          <img src="{{ url_for('static', filename='img/dr-logo.png') }}" class="align-items-center">
+          <div class="boxed">
+            <h1 class="text-uppercase text-white">Dewan Rakyat (DR)</h1>
+            <h4 class="main-text">
+                TOPIC A: Amendment of Syariah Courts (Criminal Jurisdiction) Act (RUU355)
+                <br><br class="next-line" style="display: none;">
+                TOPIC B: Discussing the Malaysia Economic Stimulus Packages (ESP) 2020
+            </h4>
+            <p class="council-desc">
+                The Dewan Rakyat is the lower chamber of the Malaysian Parliament which consists of democratically elected members from federal constituencies and has the potential to shape the country’s future through its legislation or constitutional amendments by passing bills in its chamber. It is up to the Members of Parliament (MPs) to decide on the legislation in order to ensure the prosperity of the Rakyat and secure the nation’s vision to be a developed country.
+                <br><br>
+                The Standing Orders of the Dewan Rakyat will be conducted.
+                <br><br>
+                *It will be conducted in both English and Bahasa Malaysia
+            </p>
+          </div>
+          <div class="about-btn">
+            <button class="mb-5">Apply Now!
+                <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 {% endblock %}
