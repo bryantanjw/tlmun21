@@ -1,0 +1,178 @@
+{% extends 'layout.html' %}
+
+{% block title %}Register - TLMUN{% endblock %}
+
+{% block content %}
+<!-- Start Header Area -->
+<header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto" id="logo">
+        <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-red.png') }}" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('councils') }}">Councils</a></li>
+          <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
+          <li><a href="{{ url_for('resources') }}">Resources</a></li>
+          <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
+          <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+</header>
+<!-- End Header Area -->
+<!-- Start Banner Area -->
+<section class="about-area">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="about-content text-align-left">
+                   <h1 class="text-center">Registration</h1>
+                   <div class="about-letter">
+                        <p>
+                            Please be informed that the fees (whenever applicable) act as a deposit to the online conference which can be refunded to the delegate after the conference. Delegates can choose for their deposit, along with other forfeited deposits, to be donated to a reputable charity organization as a contribution in uplifting the less-fortunate. Delegates who are eligible for the deposit, but willing for it to be donated to charity, are eligible for a physical certificate that will be mailed to the address given by the delegate after the conference. (within Malaysia only)
+                            <br><br>
+                            The link to the respective council Discord server will be emailed to delegates atleast a week before the conference. An e-certificate will be given to all delegates who have fully participated in the conference unless a valid reason are given for not doing so.
+                            <br><br>
+                            Please note that the eligibility of the refund of deposit will be stated in the refund policy.
+                        </p>
+				    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Banner Area -->
+
+<section class="pricing py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Free Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Chair & Crisis Director</h5>
+              <h6 class="card-price text-center">RM0<span class="period">/delegate</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Registration ends on 17th May 2020</strong></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>MUN experience is mandatory</li>
+                <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li> -->
+                <!-- <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li> -->
+              </ul>
+              <a href="#" class="btn btn-block text-uppercase">REGISTER</a>
+            </div>
+          </div>
+        </div>
+        <!-- Plus Tier -->
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Head of Group Delegation</h5>
+              <h6 class="card-price text-center">RM10<span class="period">/delegate</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Registration ends on 31st July 2020</strong></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Minimum 8 delegates per group delegation</li>
+                <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li> -->
+              </ul>
+              <a href="#" class="btn btn-block text-uppercase">REGISTER</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pro Tier -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Individual Delegation</h5>
+              <h6 class="card-price text-center">RM10<span class="period">/delegate</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Registration ends on 12 August 2020</strong></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>International Delegate fee: USD$3</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Fee is on a deposit basis (look at the top description)</li>
+                <!-- <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li> -->
+              </ul>
+              <a href="#" class="btn btn-block text-uppercase">REGISTER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="about-area" id="payment-area">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="about-content text-align-left">
+                   <h2 class="text-center">Payment Details</h2>
+                   <div class="about-letter payment-letter">
+                        <p>
+                            Please be informed that the fees (whenever applicable) act as a deposit to the online conference which can be refunded to the delegate after the conference. Delegates can choose for their deposit, along with other forfeited deposits, to be donated to a reputable charity organization as a contribution in uplifting the less-fortunate. Delegates who are eligible for the deposit, but willing for it to be donated to charity, are eligible for a physical certificate that will be mailed to the address given by the delegate after the conference. (within Malaysia only)
+                            <br><br>
+                            The link to the respective council Discord server will be emailed to delegates atleast a week before the conference. An e-certificate will be given to all delegates who have fully participated in the conference unless a valid reason are given for not doing so.
+                            <br><br>
+                            Please note that the eligibility of the refund of deposit will be stated in the refund policy.
+                        </p>
+				    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-area" id="payment-area">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10">
+                <div class="about-content text-align-left">
+                   <h2 class="text-center">Refund Policy</h2>
+                   <div class="about-letter payment-letter">
+                        <p>
+                            Thank you for your interest in joining Taylor’s Lakeside Model United Nations (TLMUN) 2020. However, we understand if you have other urgent issues on the conference date.
+                            <br><br>
+                            Notification must be received by TLMUN Finance department in an email not later than 7 days after payment is done for any refunds to be eligible. Please include the adequate verification for our reference as well. Cancellations received after this period will not be eligible for a refund.
+                            <br><br>                          
+                            Cancellations due to medical issues, or other unforeseeable circumstances beyond reasonable control will be reviewed on a case-by-case basis. We are able to offer full refunds for delegates who provide adequate verification of such circumstances before 1 May 2020, 12 am.
+                            <br><br>                         
+                            Please note that to be eligible for the refund of the deposit, 90% participation rate will be needed, which the delegate attendance sheet (filled by the chairperson) will act as evidence.
+                            <br><br>                            
+                            Please send in your refund request by email to finance.tlmunconference@gmail.com with Email Heading: Payment Refund.
+                            <br><br>                           
+                            We will respond to your request within 3 working days. If there is no response within the specified period of time, please do not hesitate to contact us at finance.tlmunconference@gmail.com.
+                            <br><br>                            
+                            *Please note that merchant fees from the initial transaction and other bank transfer fees will be deducted from the amount refunded.
+                            <br><br>                           
+                            *Please take note that fees are only refundable if and only if notice is given within a week's time from payment date.                           ​
+                            <br><br>
+                            We reserve the right to amend the policy from time to time.            
+                        </p>
+				    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

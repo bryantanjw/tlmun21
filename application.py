@@ -47,6 +47,10 @@ def resources():
 def secretariat():
     return render_template('secretariat.html')
 
+@app.route("/register")
+def register():
+    return render_template('register.html')
+
 @app.route("/faq")
 def faq():
     return render_template('faq.html')
