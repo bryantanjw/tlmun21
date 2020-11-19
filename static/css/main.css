@@ -9,12 +9,12 @@
 html,body{height:100%;}
 ::-moz-selection {
   /* Code for Firefox */
-  background-color: #ad1010;
+  background-color: #9c0404;
   color: #fff;
 }
 
 ::selection {
-  background-color: #ad1010;
+  background-color: #9c0404;
   color: #fff;
 }
 
@@ -1951,7 +1951,7 @@ body {
   height: 2px;
   bottom: 3px;
   left: 25px;
-  background-color: #880e0e;
+  background-color: #9c0404;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -2247,7 +2247,7 @@ a, a:hover, a:active, a:focus {
   display: block;
   width: 70px;
   height: 5px;
-  background: #ad1010;
+  background: #9c0404;
   bottom: 0;
   margin-left: 45%;
   margin-bottom: 50px;
@@ -3215,7 +3215,7 @@ a, a:hover, a:active, a:focus {
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #ad1010;
+    border-left: 0.5rem solid #9c0404;
   }
 }
 .projects-section .project-text {
@@ -3227,7 +3227,7 @@ a, a:hover, a:active, a:focus {
     padding: 5rem;
   }
   .projects-section .project-text hr {
-    border-color: #ad1010;
+    border-color: #9c0404;
     border-width: 0.25rem;
     width: 30%;
   }
