@@ -3058,7 +3058,7 @@ a, a:hover, a:active, a:focus {
 }
 
 #intro h1 span {
-  color: #b91c15;
+  color: #af0303;
 }
 
 @media (max-width: 991px) {
@@ -3082,7 +3082,7 @@ a, a:hover, a:active, a:focus {
 #intro .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#b91c15 50%, rgba(101, 111, 150, 0.15) 52%);
+  background: radial-gradient(#af0303 50%, rgba(101, 111, 150, 0.15) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -3303,18 +3303,19 @@ a, a:hover, a:active, a:focus {
       -webkit-transform: translateX(4px);
       transform: translateX(4px); }
 
-  .about-letter b {
+  .hover-word a {
     color: black;
     text-decoration: none;
     background-position-y: -0%;
-    background-image: linear-gradient( white 50%, gold 50%);
+    background-image: linear-gradient( white 50%, #9c0404 50%);
     transition: background 500ms ease;
     background-size: 2px;
-    background-size: auto 175%;
+    background-size: auto 180%;
   }
   
-  .about-letter a:hover {
+  .hover-word a:hover {
     background-position-y: 100%;
+    color: white !important;
   }
 /*--------------------------------------------------------------
 # Council Section
@@ -5307,7 +5308,8 @@ img {
 }
 .resources-container .card h2 {
   z-index: 5;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
   position: absolute;
   bottom: 20px;
   right: 170px;
@@ -5321,7 +5323,7 @@ img {
   position: absolute;
   right: 75px;
   bottom: 25px;
-  font-size: 50px;
+  font-size: 55px;
   cursor: pointer;
 }
 .resources-container .card p {
@@ -5332,6 +5334,7 @@ img {
   color: #333;
   opacity: 0.7;
   font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 1px;
   writing-mode: vertical-lr;
   -webkit-transition: all 0.2s ease;
