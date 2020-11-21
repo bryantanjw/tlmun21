@@ -3303,7 +3303,7 @@ a, a:hover, a:active, a:focus {
       -webkit-transform: translateX(4px);
       transform: translateX(4px); }
 
-  .about-letter a {
+  .about-letter b {
     color: black;
     text-decoration: none;
     background-position-y: -0%;
