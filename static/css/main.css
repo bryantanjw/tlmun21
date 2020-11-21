@@ -4724,14 +4724,14 @@ img {
   transition: all .6s ease .3s;
 }
 .box15 .box-content:before {
-  border-left: 1px solid #040404;
-  border-top: 1px solid #040404;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
   top: 19px;
   left: 19px;
 }
 .box15 .box-content:after {
-  border-bottom: 1px solid #040404;
-  border-right: 1px solid #040404;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
   bottom: 19px;
   right: 19px;
 }
@@ -4741,7 +4741,7 @@ img {
 }
 .box15 .title {
   font-size: 22px;
-  color: #000;
+  color: white;
   margin: 0;
   position: absolute;
   left: 35%;
@@ -4757,7 +4757,7 @@ img {
   content: "";
   width: 0;
   height: 1px;
-  background: #040404;
+  background: white;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -4782,6 +4782,7 @@ img {
 .box15:hover .icon {
   bottom: 39%;
   opacity: 1;
+  color: white;
 }
 .box15 .icon li {
   display: inline-block;
