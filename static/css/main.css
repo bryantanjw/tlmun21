@@ -3206,11 +3206,20 @@ a, a:hover, a:active, a:focus {
     text-align: center !important;
   }
 }
+.projects-section h1, h4 {
+  font-family: 'Times New Roman', Times, serif;
+}
+.projects-section h4 {
+  font-size: 35px;
+}
 .projects-section {
   padding: 7rem 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 .projects-section .featured-text {
   padding: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 0.5px;
 }
 @media (min-width: 992px) {
   .projects-section .featured-text {
@@ -3220,7 +3229,8 @@ a, a:hover, a:active, a:focus {
 }
 .projects-section .project-text {
   padding: 3rem;
-  font-size: 90%;
+  font-size: 16px;
+  word-spacing: 0.5px;
 }
 @media (min-width: 992px) {
   .projects-section .project-text {
