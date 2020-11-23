@@ -2153,7 +2153,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .banner-area {
-  height: 800px;
+  height: 1100px;
 }
 #council-indi {
   height: 1200px;
@@ -2228,19 +2228,23 @@ a, a:hover, a:active, a:focus {
 
 .banner-content h1 {
   color: #fff;
-  margin-top: -40px;
   font-size: 124px;
   letter-spacing: 3px;
+  padding-top: 100px !important;
   font-weight: 700;
   line-height: 1.15em;
+  margin-top: 200px !important;
   /* text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5); */
   font-family: 'Times New Roman', Times, serif;
 }
 .banner-content .main-text {
   font-family: 'Times New Roman', Times, serif;
-  font-style: initial;
-  font-size: 30px;
-  margin-top: 20px;
+  font-size: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 400;
 }
 #council-indi .council-desc::before {
   content: '';
@@ -2252,10 +2256,35 @@ a, a:hover, a:active, a:focus {
   margin-left: 45%;
   margin-bottom: 50px;
 }
-/* .banner-content .boxed {
-  background-color: rgba(138, 25, 25, 0.466);
-  padding: 60px;
-} */
+.red-bg {
+  position: absolute;
+  width: 950px;
+  height: 720px;
+  right: 5px;
+  z-index: -1;
+  background-color: #9c040488;
+}
+@media (max-width: 797px) {
+  .red-bg {
+    height: 600px;
+  }
+  .banner-area {
+    height: 800px;
+  }
+  .banner-content h1 {
+    margin-top: -30px !important;
+    font-size: 48px !important;
+  }
+  .banner-content h2 {
+    font-size: 32px !important;
+  }
+  .countdown-container li {
+    font-size: 15px !important;
+  }
+  .countdown-container span {
+    font-size: 28px !important;
+  }
+}
 @media (max-width: 991px) {
   .banner-content h1 {
     font-size: 36px;
@@ -2419,6 +2448,47 @@ a, a:hover, a:active, a:focus {
   }
 }
 
+.countdown-container li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.countdown-container li span {
+  display: block;
+  font-size: 2.2rem;
+}
+
+.countdown-container .message {
+  font-size: 2.2rem;
+}
+
+.countdown-container #content {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 .25rem;
+}
+
+@media all and (max-width: 768px) {
+  .countdown-container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-container li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  .countdown-container li span {
+    font-size: 3.375rem;
+  }
+}
 .image {
   opacity: 1;
   display: block;

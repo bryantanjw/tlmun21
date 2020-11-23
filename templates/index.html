@@ -37,13 +37,25 @@
 				<div class="col-lg-10">
 					<div class="banner-content text-center apply-btn">
 						<!-- <img src="{{ url_for('static', filename='img/logo.png') }}" width="700px" class="align-items-center"> -->
+						<div class="red-bg"></div>
 						<div class="boxed">
-							<h1 class="text-uppercase text-white"><r>TLMUN</r> 2021</h1>
-							<h4 class="main-text">TLMUN is going virtual! Registration opens today!</h4>
+							<h1 class="text-uppercase text-white mt-5">TLMUN 2021</h1>
+							<h2 class="main-text">Renascitur</h2>
+							<!-- Countdown 1-->
+							<div class="countdown-container">
+								<div id="countdown">
+								  <ul>
+									<li><span id="days"></span>days</li>
+									<li><span id="hours"></span>Hours</li>
+									<li><span id="minutes"></span>Minutes</li>
+									<li><span id="seconds"></span>Seconds</li>
+								  </ul>
+								</div>
+							</div>
+							<a href="{{ url_for('register') }}"><button>Register Now!
+								<span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
+							</button></a>
 						</div>
-						<a href="{{ url_for('register') }}"><button>Register Now!
-							<span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
-						</button></a>
 					</div>
 				</div>
 			</div>

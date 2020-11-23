@@ -34,51 +34,54 @@
       <h3 class="timeline-header__subtitle">All times displayed in GMT+8</h3>
     </div>
     <div class="timeline">
-      <div class="timeline-item" data-text="2:30 - 6.00 pm">
+      <div class="timeline-item" data-text="26/02/2021">
         <div class="timeline__content"><img class="timeline__img" src="{{ url_for('static', filename='img/iti-1.jpg') }}"/>
           <h2 class="timeline__content-title">DAY 1</h2>
           <h2 class="timeline__content-desc"> 
-            2.30 - 2.45 pm:<br><strong>Registration/Preparation</strong><br><br>
-            2.45 - 3.30 pm:<br><strong>Committee Session 1</strong><br><br>
-            3.30 pm - 4.00 pm:<br><strong>Opening Ceremony</strong><br><br>
-            4.00 pm - 6.00 pm:<br><strong>Committee Session 2</strong>
+            3.30 PM:<br><strong>Arrival of Delegates</strong><br><br>
+            4.00 PM:<br><strong>Opening Ceremony</strong><br><br>
+            5.00 PM:<br><strong>Committee Session Zero</strong><br><br>
+            6.00 PM:<br><strong>End of Day 1</strong>
         </h2>
         </div>
       </div>
-      <div class="timeline-item" data-text="8.45 - 6.00 pm">
+      <div class="timeline-item" data-text="27/02/2021">
         <div class="timeline__content"><img class="timeline__img" src="{{ url_for('static', filename='img/yalta-2.jpg') }}"/>
           <h2 class="timeline__content-title">DAY 2</h2>
           <h2 class="timeline__content-desc">
-            8.45 - 9.00 am:<br><strong>Preparation</strong><br><br>
-            9.00 - 10.45 am:<br><strong>Council Session 3</strong><br><br>
-            10.45 - 11.00 am:<br><strong>Break</strong><br><br>
-            11.00 - 12.30 pm:<br><strong>Council Session 4</strong><br><br>
-            12.30 - 2.30 pm:<br>Lunch<br><br>
-            2.30 - 4.00 pm:<br>Council Session 5<br><br>
-            4.00 - 4.15 pm:<br>Break<br><br>
-            4.15 - 6.00 pm:<br>Council Session 6 
+            8.45 AM:<br><strong>Arrival of Delegates</strong><br><br>
+            9.00 AM:<br><strong>Committee Session 1</strong><br><br>
+            10.30 AM:<br><strong>Break</strong><br><br>
+            10.45 AM:<br><strong>Committee Session 2</strong><br><br>
+            12.45 PM:<br><strong>Lunch</strong><br><br>
+            2.00 PM:<br><strong>Committee Session 5</strong><br><br>
+            3.45 PM:<br><strong>Break</strong><br><br>
+            4.00 PM:<br><strong>Committee Session 4</strong><br><br>
+            6.00 PM:<br><strong>End of Day 2</strong>          
         </h2>
         </div>
       </div>
-      <div class="timeline-item" data-text="8.45 - 6.00 pm">
-        <div class="timeline__content"><img class="timeline__img" src="{{ url_for('static', filename='img/iti-2.jpg') }}"/>
+      <div class="timeline-item" data-text="28/02/2021">
+        <div class="timeline__content"><img class="timeline__img" src="{{ url_for('static', filename='img/dydx.png') }}"/>
           <h2 class="timeline__content-title">DAY 3</h2>
           <h2 class="timeline__content-desc">
-            8.45 - 9.00 am:<br>Preparation<br><br>
-            9.00 - 10.45 am:<br>Council Session 3<br><br>
-            10.45 - 11.00 am:<br>Break<br><br>
-            11.00 - 12.30 pm:<br>Council Session 4<br><br>
-            12.30 - 2.30 pm:<br>Lunch<br><br>
-            2.30 - 4.00 pm:<br>Council Session 5<br><br>
-            4.00 - 4.15 pm:<br>Break<br><br>
-            4.15 - 6.00 pm:<br>Council Session 6 
+            8.45 AM:<br><strong>Arrival of Delegates</strong><br><br>
+            9.00 AM:<br><strong>Committee Session 5</strong><br><br>
+            10.30 AM:<br><strong>Break</strong><br><br>
+            10.45 AM:<br><strong>Committee Session 6</strong><br><br>
+            12.45 PM:<br><strong>Lunch</strong><br><br>
+            2.00 PM:<br><strong>Committee Session 7</strong><br><br>
+            3.45 PM:<br><strong>Break</strong><br><br>
+            4.00 PM:<br><strong>Committee Session 8</strong><br><br>
+            6.00 PM:<br><strong>Closing Ceremony</strong>
           </h2>
         </div>
       </div>
 
-    <button>DOWNLOAD SCHEDULE
+    <a href="{{ url_for('static', filename='img/schedule.pdf') }}" download><button>DOWNLOAD SCHEDULE
         <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
     </button>
+    </a>
     
       <!-- <div class="timeline-item" data-text="FATHER OF THE TURKS">
         <div class="timeline__content"><img class="timeline__img" src="http://cdn.yemek.com/uploads/2014/11/ataturk-10-kasim.jpg"/>
