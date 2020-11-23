@@ -5469,7 +5469,7 @@ section.pricing {
 
 .pricing .card-title {
   margin: 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   letter-spacing: .1rem;
   font-weight: bold;
 }
@@ -5530,4 +5530,22 @@ section.pricing {
   margin-bottom: -30px;
   text-align: left !important;
   padding-left: 190px;
+}
+@media (max-width: 797px) {
+  #payment-area p, #payment-area li {
+    font-size: 14px;
+  }
+}
+
+
+ol.a {
+  list-style-type: lower-alpha;
+}
+
+ol li {
+  padding-left: 10px;
+}
+
+.tab {
+  margin-left: 60px;
 }
