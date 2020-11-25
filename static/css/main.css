@@ -2171,6 +2171,7 @@ a, a:hover, a:active, a:focus {
   color: black !important;
 }
 #council-indi h4 {
+  font-style: normal;
   font-size: 24px;
   font-weight: bold;
   color: black;
@@ -2456,6 +2457,23 @@ a, a:hover, a:active, a:focus {
       .apply-btn button:hover {
         color: black;
       }
+
+
+.img-wrap {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -1;
+  width: calc(100% - 50%);
+  top: 50%;
+  right: 80%;
+  height: 100%;
+  z-index: 2;
+  min-height: 600px;
+  overflow: hidden;
+  border-top-right-radius: 200px !important;
+  border-bottom-right-radius: 200px; 
+}
 
 .letter-area {
   padding-top: 150px;
@@ -2874,6 +2892,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .footer-area {
+  position: relative !important;
   padding: 40px 0;
   width: 100%;
   margin-top: 90px;
@@ -4813,6 +4832,7 @@ img {
   height: 450px;
   object-fit: cover;
 }
+
 .portfolio-wrap .subheading {
   font-family: 'Times New Roman', Times, serif;
   font-size: 21px;
@@ -5550,6 +5570,7 @@ img {
 }
 
 .gradient-bg {
+  padding-bottom: 80px;
 	background: linear-gradient(-45deg, #ffffff, #ffffff, #e6e5e5);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
