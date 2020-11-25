@@ -2228,28 +2228,48 @@ a, a:hover, a:active, a:focus {
 
 .banner-content h1 {
   color: #fff;
-  font-size: 60px;
+  margin-top: -40px;
+  font-size: 124px;
   letter-spacing: 3px;
   font-weight: 700;
-  padding-top: 100px !important;
   line-height: 1.15em;
-  margin-top: -100px !important;
   /* text-shadow: 13px 15px 8px rgba(63, 107, 169, 0.5); */
   font-family: 'Times New Roman', Times, serif;
 }
-.banner-content h4 {
+.index-banner h1 {
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 100px !important;
+  line-height: 1.15em;
+  margin-top: -100px !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+.index-banner h4 {
   margin-top: 200px !important;
   font-family: 'Times New Roman', Times, serif;
 }
-.banner-content h3 {
+.index-banner h3 {
   font-family: 'Times New Roman', Times, serif;
   color: white;
   font-weight: 200;
-  font-style: 20px;
+  font-style: normal;
   font-size: 22px;
   letter-spacing: 1.2px;
 }
 .banner-content .main-text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+.index-banner {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
   margin-top: 30px;
@@ -2270,6 +2290,7 @@ a, a:hover, a:active, a:focus {
   margin-bottom: 50px;
 }
 .red-bg {
+  display: none;
   position: absolute;
   top: 160px;
   width: 950px;
@@ -2279,24 +2300,21 @@ a, a:hover, a:active, a:focus {
   background-color: #9c040488;
 }
 @media (max-width: 797px) {
-  .boxed  {
-    margin-top: -200px !important;
-  }
+
   .red-bg {
-    height: 200px;
+    display: none;
   }
   .banner-area {
     height: 900px;
   }
-  .banner-content h1 {
-    margin-top: -100px !important;
+  .index-banner h1 {
     font-size: 28px !important;
     margin-right: 2px;
   }
-  .banner-content h2 {
+  .index-banner h2 {
     font-size: 22px !important;
   }
-  .banner-content h3 {
+  .index-banner h3 {
     font-size: 18px;
   }
   .countdown-container li {
@@ -2376,6 +2394,7 @@ a, a:hover, a:active, a:focus {
 
 .apply-btn button {
   font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: none;
   width: 200px;
   height: 80px;
@@ -2471,9 +2490,10 @@ a, a:hover, a:active, a:focus {
 
 .countdown-container li {
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.1rem;
   list-style-type: none;
   padding: 1em;
+  font-style: normal;
   text-transform: uppercase;
   color: white;
   font-family: 'Times New Roman', Times, serif;
@@ -5247,6 +5267,12 @@ img {
 
 #faq #faq-list li {
   border-bottom: 1px solid #ddd;
+}
+#faq-list .faq-link a {
+  padding: 0 !important;
+  font-size: 17px !important;
+  word-spacing: 0.5px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #faq #faq-list a {
