@@ -1,67 +1,268 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}About — TLMUN{% endblock %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Yalta Conference of 1945 - TLMUN</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
 
-{% block content %}
-<div class="gradient-bg">
-  <!-- Start Header Area -->
-  <header id="header" class="d-flex align-items-center header-transparent">
-      <div class="container d-flex align-items-center">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
 
-        <div class="logo mr-auto">
-          <!-- <h1 class="text-light"><a href="index.html"><span>Bootslander</span></a></h1> -->
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo-red.png') }}" alt="" class="img-fluid"></a>
-        </div>
+  <!-- Booooooootstrap -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-            <li class="active"><a href="{{ url_for('councils') }}">Councils</a></li>
-            <li><a href="{{ url_for('timeline') }}">Timeline</a></li>
-            <li><a href="{{ url_for('resources') }}">Resources</a></li>
-            <li><a href="{{ url_for('secretariat') }}">Secretariat</a></li>
-            <li><a href="{{ url_for('register') }}">Register</a></li>
-            <li><a href="{{ url_for('faq') }}">FAQ</a></li>
 
-          </ul>
-        </nav><!-- .nav-menu -->
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/rellax.css') }}">
 
-      </div>
-    </header><!-- End Header -->
-  <!-- End Header Area -->
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
 
-  <section class="banner-area relative" id="council-indi">
+<body>
+  <div class="grid">
     <div class="container">
-      <div class="row fullscreen align-items-center justify-content-center">
-        <div class="col-lg-10">
-          <div class="banner-content text-center">
-            <img src="{{ url_for('static', filename='img/dr-logo.png') }}" class="align-items-center">
-            <div class="boxed">
-              <h1 class="text-uppercase text-white">Dewan Rakyat (DR)</h1>
-              <h4 class="main-text">
-                  TOPIC A: Amendment of Syariah Courts (Criminal Jurisdiction) Act (RUU355)
-                  <br><br class="next-line" style="display: none;">
-                  TOPIC B: Discussing the Malaysia Economic Stimulus Packages (ESP) 2020
-              </h4>
-              <p class="council-desc">
-                  The Dewan Rakyat is the lower chamber of the Malaysian Parliament which consists of democratically elected members from federal constituencies and has the potential to shape the country’s future through its legislation or constitutional amendments by passing bills in its chamber. It is up to the Members of Parliament (MPs) to decide on the legislation in order to ensure the prosperity of the Rakyat and secure the nation’s vision to be a developed country.
-                  <br><br>
-                  The Standing Orders of the Dewan Rakyat will be conducted.
-                  <br><br>
-                  *It will be conducted in both English and Bahasa Malaysia
-              </p>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-md-2">
+          <div class="grid-line"></div>
+        </div>
+        <div class="col-md-2">
+          <div class="grid-line" style="margin-right:-30px;border-right:1px solid #ccc"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="fixed-top rellax" data-rellax-speed="-2" data-rellax-xs-speed="-5" data-rellax-mobile-speed="3"
+    data-rellax-tablet-speed="-8" style="transform: rotate(45deg);">
+  </div> -->
+  <div class="fixed-top rellax">
+  </div>
+
+  <main class="main">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-11">
+            <a href="{{ url_for('councils') }}">
+              <h2>COUNCILS<span>&#x2190;</span></h2>
+            </a>
+            <div class="white-block"></div>
+          </div>
+        </div>
+        <div class="title">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-6">
+              <h1>Yalta Conference of 1945
+                <!-- <span>JS</span> -->
+              </h1>
             </div>
-            <div class="about-btn">
-              <a href="{{ url_for('register') }}"><button class="mb-5">Register Now!
-                <span class="iconify" data-icon="zmdi-arrow-right" data-inline="false"></span>
-            </button></a>
+            <div class="col-md-4 text-right">
+              <a href="{{ url_for('register') }}">REGISTER</a>
+            </div>
+          </div>
+        </div>
+        <div class="subtitle">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-2">
+              <h3><a href="{{ url_for('index') }}">HOME</a></h3>
+            </div>
+            <div class="col-md-2">
+              <h3><a href="{{ url_for('resources') }}">COUNTRY MATRIX</a></h3>
+            </div>
+            <div class="col-md-2">
+              <h3><a href="{{ url_for('resources') }}">RESEARCH REPORT</a></h3>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+    </header>
 
-{% endblock %}
+    <div class="mouse_scroll">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div>
+        <span class="m_scroll_arrows unu"></span>
+        <span class="m_scroll_arrows doi"></span>
+        <span class="m_scroll_arrows trei"></span>
+      </div>
+    </div>
+
+    <section class="section san-francisco">
+      <div class="absolute">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-11">
+              <h2 class="rellax" data-rellax-speed="-3" data-rellax-xs-speed="-5" data-rellax-mobile-speed="4"
+                data-rellax-tablet-speed="-3">
+                Yalta<br>Crimean Peninsula
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute above">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-offset-1 col-md-2">
+              <div class="lg-green rellax" data-rellax-speed="2" data-rellax-xs-speed="1" data-rellax-mobile-speed="2"
+                data-rellax-tablet-speed="2" style="transform: rotate(45deg);">
+              </div>
+              <div class="sm-green rellax" data-rellax-speed="5" data-rellax-xs-speed="3" data-rellax-mobile-speed="4"
+                data-rellax-tablet-speed="5" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+            <div class="col-md-offset-2 col-md-1"  style="margin-left: 120px;">
+              <div class="sm-purple rellax" data-rellax-speed="2" data-rellax-xs-speed="1" data-rellax-mobile-speed="2"
+                data-rellax-tablet-speed="2" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+            <div class="col-md-offset-3 col-md-1" style="margin-left: 200px;">
+              <div class="xs-green rellax" data-rellax-speed="5" data-rellax-xs-speed="3" data-rellax-mobile-speed="4"
+                data-rellax-tablet-speed="5" style="transform: rotate(45deg);">
+              </div>
+              <div class="md-green rellax" data-rellax-speed="1" data-rellax-xs-speed="1" data-rellax-mobile-speed="2"
+                data-rellax-tablet-speed="2" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+            <div class="col-md-1" style="margin-left: 200px;">
+              <div class="lg-purple rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
+                data-rellax-tablet-speed="3" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-5">
+            <div class="date">
+              <!-- Happening—<br> -->
+              1945<br><br>
+              44°29′N 34°10′E
+            </div>
+          </div>
+          <div class="col-md-offset-1 col-md-4">
+            <div class="temp">
+              4°
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="documentation">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <!-- Getting Started -->
+            <section class="section" id="GettingStarted">
+              <div style="margin-top: 8rem">
+                <div>
+                  <!-- sect1 -->
+                  <h2 class="heading"><kbd>TOPIC:</kbd>
+                  <br>
+                  The Postwar Reorganization of Germany and Europe
+                  </h2>
+                </div>
+              </div>
+            </section>
+
+            <!-- Destroy -->
+            <!-- <section class="section" id="Destroy">
+              <div style="margin-top: 6rem"> -->
+                <!-- sect1 -->
+                <!-- <h2 class="heading">Destroy</h2>
+                <div class="text-editor">
+                  <code>
+                    &lt;script&gt;
+                      <br>&nbsp;&nbsp;<span class="comment">// Start Rellax</span>
+                      <br>&nbsp;&nbsp;<span class="purple">var</span> rellax = <span class="green">new</span> <span class="white">Rellax</span>('.rellax');
+                      <br />
+                      <br>&nbsp;&nbsp;<span class="comment">// End Rellax and reset parallax elements to their original positions</span>
+                        <br>&nbsp;&nbsp;rellax<span class="orange">.refresh();</span>
+                        <br>
+                    &lt;/script&gt;
+                  </code>
+                </div>
+              </div>
+            </section> -->
+
+          </div>
+        </section>
+      </div>
+      <div class="copy" style="margin-top: 100px;margin-bottom: 100px">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-6">
+              <p>
+                Six brutal years have passed since the onset of the Second World War. The Allies have begun their march into the German heartland. In the West, British and American forces have begun their breach into the Siegfried Line. In the East, the Soviet Union has prepared for the final blow, the Red Army setting their sights on Berlin. The end of the war was near, yet what shall be the future of Europe?
+              </p>
+              <br>
+              <p>The Yalta Conference was held for this purpose. Beginning from the 4th of February, 1945, Premier Joseph V. Stalin, President Franklin D. Roosevelt and Prime Minister Winston Churchill met in the resort city of Yalta, situated in the Crimean Peninsula. As the second of three significant wartime conferences among the “Big Three”, it sought to form a lasting peace in post-war Europe, enshrined by an order of collective security with self-determination for all liberated peoples of Europe.</p>
+              <br>
+              <p>The future of Europe is in your hands. Shall Europe become a bastion of eternal peace and self-determination or shall Europe fall into the hollows of history as a divided continent, driven by the interests of superpowers? You shall decide.</p>
+              <br>
+              <p><i><strong>Note:</strong> This historical council will be conducted with the HMUN Rules of Procedures with new semi-crisis mechanics devised by TLMUN.</i></p>
+              <div class="col-md-offset-3 col-md-1" style="margin-left: 800px;">
+                <div class="md-green rellax" data-rellax-speed="1" data-rellax-xs-speed="1" data-rellax-mobile-speed="2"
+                  data-rellax-tablet-speed="2" style="transform: rotate(45deg);">
+                </div>
+              </div>
+              <div class="xs-green rellax" data-rellax-speed="5" data-rellax-xs-speed="3" data-rellax-mobile-speed="4"
+                data-rellax-tablet-speed="5" style="transform: rotate(45deg);">
+              </div>
+              <div class="col-md-1">
+                <div class="lg-purple rellax" data-rellax-speed="3" data-rellax-xs-speed="2" data-rellax-mobile-speed="2"
+                  data-rellax-tablet-speed="3" style="transform: rotate(45deg);">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- javascript -->
+  <script src="{{ url_for('static', filename='js/rellax.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/option.js') }}"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
+    });
+  </script>
+
+
+
+</body>
+
+</html>
