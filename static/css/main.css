@@ -2226,7 +2226,9 @@ a, a:hover, a:active, a:focus {
     margin: 0 !important;
   }
 }
-
+.banner-content .council-heading {
+  font-size: 105px;
+}
 .banner-content h1 {
   color: #fff;
   margin-top: -40px;
