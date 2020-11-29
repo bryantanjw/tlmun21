@@ -14,7 +14,10 @@ main {
 }
 @media (max-width: 797px) {
     body {
-        padding-right: 0 !important;
+      margin-left: -10px !important;
+      padding-right: 20px !important;
+      transform: scale(0.3);
+      transform-origin: 0 0;
     }
     .temp {
         padding-left: 50vh !important;
