@@ -175,16 +175,59 @@ header h3 a:hover {
   margin-left: 100px;
 } */
 
-.fixed-top {
-    position: absolute;
-    opacity: 0.5;
-    width: 500px;
-    height: 500px;
-    background: url(../img/dr-logo.png);
-    background-size: contain;
-    z-index: -1;
-    margin-left: 120px;
-  }
+.unhrc {
+  position: absolute;
+  opacity: 0.5;
+  width: 500px;
+  height: 500px;
+  background: url(../img/UNHRC_logo.png);
+  background-size: contain;
+  z-index: -1;
+}
+
+.coe {
+  position: absolute;
+  opacity: 0.5;
+  width: 700px;
+  height: 600px;
+  background: url(../img/concertofeurope_logo.png);
+  background-size: cover;
+  z-index: -1;
+  margin-left: -100px;
+  margin-top: -20px;
+}
+
+.unsc {
+  position: absolute;
+  opacity: 0.5;
+  width: 560px;
+  height: 470px;
+  background: url(../img/UNSC_logo.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: 30px;
+}
+
+.wha {
+  position: absolute;
+  opacity: 0.5;
+  width: 500px;
+  height: 500px;
+  background: url(../img/WHA_logo.png);
+  background-size: cover;
+  z-index: -1;
+}
+
+.dr {
+  position: absolute;
+  opacity: 0.5;
+  width: 500px;
+  height: 500px;
+  background: url(../img/dewanrakyat_logo.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: -10px;
+}
 
 /*----------------------------------
   Main
