@@ -5662,7 +5662,7 @@ section.pricing {
 }
 
 #payment-area {
-  margin-top: -180px;
+  margin-top: -200px;
 }
 #payment-area h2 {
   border-left: 0.5rem solid #ad1010;
@@ -5672,6 +5672,9 @@ section.pricing {
   margin-bottom: -30px;
   text-align: left !important;
   padding-left: 190px;
+}
+.payment-letter {
+  line-height: 1.4;
 }
 @media (max-width: 797px) {
   #payment-area p, #payment-area li {
