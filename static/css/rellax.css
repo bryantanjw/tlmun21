@@ -157,6 +157,7 @@ header .title a:hover {
   padding: 20px 90px;
 }
 header h3 {
+  margin-top: 40px;
   font-size: 21px;
   width: 50%;
 }
@@ -271,7 +272,7 @@ header h3 a:hover {
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .absolute.above {
   z-index: 2;
@@ -460,7 +461,7 @@ h3.heading {
 }
 
 .documentation {
-  margin-top: 1rem;
+  margin-top: -50px;
 }
 .options {
   border-radius: 12px;
