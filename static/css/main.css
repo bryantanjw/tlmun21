@@ -4990,6 +4990,10 @@ img {
   .council-text {
     text-align: justify;
   }
+  .portfolio-wrap .quote {
+    margin-left: -90px !important;
+    width: 150% !important;
+  }
 }
 @media (min-width: 576px) {
   .hero-left {
