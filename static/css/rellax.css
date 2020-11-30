@@ -235,6 +235,18 @@ header h3 a:hover {
   margin-top: -10px;
 }
 
+.yalta {
+  position: absolute;
+  opacity: 0.5;
+  width: 600px;
+  height: 550px;
+  background: url(../img/YALTA_Logo.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: -30px;
+  margin-left: -10px;
+}
+
 /*----------------------------------
   Main
 ------------------------------------*/
