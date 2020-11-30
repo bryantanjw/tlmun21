@@ -202,6 +202,8 @@ $(document).ready(function(){
     });
   });
 
+  $("#myModal").modal()
+
 
   // Timeline
   $.fn.timeline = function() {
