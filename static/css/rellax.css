@@ -33,6 +33,9 @@ main {
         letter-spacing: 0.5px;
         text-align: justify;
     }
+    .quote {
+      padding-left: 230px !important;
+    }
     h2.heading {
     font-size: 70px !important;
     width: 110vh !important;
