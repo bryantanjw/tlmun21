@@ -4933,7 +4933,8 @@ img {
   display: inline-block;
 }
 .box15 .icon li a {
-  left: 180px;
+  left: 170px;
+  top: 10px;
   position: relative;
   display: block;
   width: 50px;
@@ -4941,7 +4942,6 @@ img {
   line-height: 40px;
   font-size: 21px;
   color: #000;
-  margin-right: 5px;
   transition: all .3s ease-in-out 0s;
 }
 .box15 .icon li a:hover {
