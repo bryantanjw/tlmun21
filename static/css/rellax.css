@@ -79,6 +79,9 @@ main {
       margin-top: 200px !important;
     }
 }
+.rellax {
+  margin-bottom: -300px;
+}
 h4 {
   font-size: 22px;
   margin-bottom: 28px;
@@ -272,7 +275,7 @@ header h3 a:hover {
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .absolute.above {
   z-index: 2;
@@ -608,8 +611,9 @@ html {
 	display: block;
 	margin: 0 auto;
 	width: 24px;
-    height: 100px;
-    padding-top: 30px;
+  height: 100px;
+  padding-top: 30px;
+  z-index: 1;
 }
 
 
