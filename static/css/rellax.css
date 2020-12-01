@@ -29,7 +29,7 @@ main {
     }
     p {
         font-size: 50px !important;
-        width: 110vh !important;
+        width: 130vh !important;
         letter-spacing: 0.5px;
         text-align: justify;
     }
@@ -38,7 +38,7 @@ main {
     }
     h2.heading {
     font-size: 70px !important;
-    width: 110vh !important;
+    width: 130vh !important;
     }
     kbd {
       font-size: 50px !important;
@@ -77,6 +77,15 @@ main {
     }
     .rellax {
       margin-top: 200px !important;
+    }
+    .lg-green, .sm-purple, .xs-green, .md-green, .lg-purple {
+      display: none !important;
+    }
+    .section {
+      margin-top: 150px !important;
+    }
+    .documentation {
+      margin-bottom: -3400px !important;
     }
 }
 .rellax {
