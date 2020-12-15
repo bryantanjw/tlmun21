@@ -3481,6 +3481,22 @@ a, a:hover, a:active, a:focus {
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.1);
   }
+  @media (max-width: 797px) {
+    #partners h2 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+    }
+    .partner {
+      width: 150px !important;
+    }
+    #partners hr {
+      margin-top: -1px !important;
+      margin-bottom: 30px !important;
+    }
+    #KIITMUN img {
+      width: 260px !important;
+    }
+  }
 /*--------------------------------------------------------------
 # Council Section
 --------------------------------------------------------------*/
