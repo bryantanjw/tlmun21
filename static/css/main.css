@@ -3461,6 +3461,25 @@ a, a:hover, a:active, a:focus {
     background-position-y: 100%;
     color: white !important;
   }
+  #partners h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+  }
+  #partners hr {
+    border-color: #9c0404;
+    border-width: 0.25rem;
+    width: 5%;
+  }
+  .partner {
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .5s ease-in-out;
+  }
+  .partner:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+  }
 /*--------------------------------------------------------------
 # Council Section
 --------------------------------------------------------------*/
