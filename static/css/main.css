@@ -3461,6 +3461,9 @@ a, a:hover, a:active, a:focus {
     background-position-y: 100%;
     color: white !important;
   }
+  #partners {
+    margin-top: -50px;
+  }
   #partners h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -3495,6 +3498,9 @@ a, a:hover, a:active, a:focus {
     }
     #KIITMUN img {
       width: 260px !important;
+    }
+    #part {
+      margin-top: 30px !important;
     }
   }
 /*--------------------------------------------------------------
