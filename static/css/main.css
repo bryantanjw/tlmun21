@@ -3471,6 +3471,7 @@ a, a:hover, a:active, a:focus {
     width: 5%;
   }
   .partner {
+    margin-top: -10px;
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .5s ease-in-out;
