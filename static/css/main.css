@@ -3473,6 +3473,12 @@ a, a:hover, a:active, a:focus {
     border-width: 0.25rem;
     width: 5%;
   }
+  @media (max-width:  797px) {
+    #gcmmun {
+      margin-top: -40px !important;
+    }
+  }
+
   .partner {
     margin-top: -10px;
     filter: gray; /* IE5+ */
@@ -3498,6 +3504,7 @@ a, a:hover, a:active, a:focus {
     }
     #KIITMUN img {
       width: 260px !important;
+      margin-bottom: 15px !important;
     }
     #part {
       margin-top: 30px !important;
