@@ -3476,6 +3476,7 @@ a, a:hover, a:active, a:focus {
   @media (max-width:  797px) {
     #gcmmun {
       margin-top: -40px !important;
+      width: 180px !important;
     }
   }
 
@@ -3503,8 +3504,8 @@ a, a:hover, a:active, a:focus {
       margin-bottom: 30px !important;
     }
     #KIITMUN img {
-      width: 260px !important;
-      margin-bottom: 15px !important;
+      width: 300px !important;
+      margin-top: -43px !important;
     }
     #part {
       margin-top: 30px !important;
