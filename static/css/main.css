@@ -2152,9 +2152,6 @@ a, a:hover, a:active, a:focus {
   z-index: 1;
 }
 
-.banner-area {
-  height: 930px;
-}
 #council-indi {
   height: 1200px;
   margin-top: 50px;
@@ -2192,6 +2189,9 @@ a, a:hover, a:active, a:focus {
 @media (max-width: 767px) {
   .banner-area .fullscreen {
     height: 850px !important;
+  }
+  .night-area .fullscreen {
+    height: 700px !important;
   }
   br {
     display: block !important;
@@ -2310,6 +2310,9 @@ a, a:hover, a:active, a:focus {
   .banner-area {
     height: 900px;
   }
+  .night-area {
+    height: 700px;
+  }
   .index-banner h1 {
     font-size: 28px !important;
     margin-right: 2px;
@@ -2355,6 +2358,12 @@ a, a:hover, a:active, a:focus {
 
 .banner-content {
   margin-top: 150px;
+}
+.night-council-content {
+  margin-top: -120px !important;
+}
+.night-council-content .council-heading {
+  font-size: 90px !important;
 }
 .banner-content h4{
   font-style: italic;
@@ -3091,6 +3100,10 @@ a, a:hover, a:active, a:focus {
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+#about-body {
+  overflow-x: hidden;
+}
+
 .about-area{
   height: auto;
   padding-top: 220px;
@@ -3504,7 +3517,7 @@ a, a:hover, a:active, a:focus {
       margin-bottom: 30px !important;
     }
     #AIMUN {
-      width: 500px !important;
+      width: 100% !important;
       margin-left: 130px !important;
     }
     #AIMUN img {
@@ -3519,7 +3532,7 @@ a, a:hover, a:active, a:focus {
     }
     #KIITMUN {
       margin-top: -25px !important;
-      width: 300px !important;
+      width: 100% !important;
       margin-left: 165px !important;
     }
     #KIITMUN img {
@@ -3586,6 +3599,9 @@ a, a:hover, a:active, a:focus {
   .banner-content .council-heading {
     font-size: 50px !important;
     margin-right: 20px !important;
+  }
+  .night-council-content .council-heading {
+    font-size: 45px !important;
   }
   .council-banner {
     height: 800px !important;
@@ -3732,17 +3748,16 @@ a, a:hover, a:active, a:focus {
   border-right-width: 12px;
 }
 #councils section.p11 {
-  background-image: url(../img/yalta-main.jpg);
+  background-image: url(../img/krisis.png);
 }
 #councils section.p11 a {
-  width: 1000px;
-  height: 78px;
-  line-height: 78px;
+  font-size: 60px;
+  width: 72%;
+  height: 94px;
+  line-height: 94px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -510px;
-  margin-top: -39px;
+  top: 40%;
+  left: 15%;
 }
 #councils section.p11 a:before, #councils section.p11 a:after {
   content: '';
@@ -3762,14 +3777,14 @@ a, a:hover, a:active, a:focus {
 }
 #councils section.p11 a:before {
   bottom: -6px;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUoAAAAHBAMAAACcthkwAAAAD1BMVEUAAAD/vwD/vwD/vwD/vwBYa2Z+AAAABHRSTlMAwEAw9JyPcwAAAC1JREFUOMtjcMEETgwQwIJFTgEiRWdto64cdeWoK8l2pSAmEIZKMWKRMxgQbQCWVcU78Wj7hwAAAABJRU5ErkJggg==);
+  background-image: url(../img/stripe.png);
   -webkit-animation: road 0.9s infinite linear;
   -moz-animation: road 0.9s infinite linear;
   animation: road 0.9s infinite linear;
 }
 #councils section.p11 a:after {
   bottom: 8px;
-  background-color: #FFBF00;
+  background-color: #cacaca;
 }
 #councils section.p11 a:hover:before, #councils section.p11 a:hover:after {
   -webkit-transform: translate(0, 0px);
@@ -3816,16 +3831,16 @@ a, a:hover, a:active, a:focus {
   animation: montanhaDaAlegria 0.9s forwards linear;
 }
 #councils section.p14 {
-  background-image: url(../img/coe.jpg);
+  background-image: url(../img/star_wars.jpeg);
 }
 #councils section.p14 a {
-  width: 70%;
+  font-size: 65px;
+  width: 72%;
   height: 94px;
   line-height: 94px;
   position: absolute;
-  top: 50%;
-  left: 11%;
-  margin-top: -47px;
+  top: 37%;
+  left: 15%;
   z-index: 10;
 }
 #councils section.p14 a:before, #councils section.p14 a:after {
@@ -3841,11 +3856,13 @@ a, a:hover, a:active, a:focus {
   transition: all 1s cubic-bezier(0.45, 0.76, 0.58, 0.94);
 }
 #councils section.p14 a:before {
-  background-color: #e2e2e2;
+  background-color: #050505;
   z-index: -1;
+  right: 17%;
 }
 #councils section.p14 a:after {
-  background-color: #fff;
+  right: 17%;
+  background-color: rgb(231, 228, 228);
   z-index: -2;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
@@ -3860,6 +3877,7 @@ a, a:hover, a:active, a:focus {
   -o-transform: scale(1) translate(10px);
   transform: scale(1) translate(10px);
 }
+
 #councils section.p15 {
   background-image: url(../img/unsc.jpg);
 }
@@ -4030,7 +4048,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   background-image: url(../img/coe.jpg);
 }
 @media (max-width: 797px) {
-  #councils section.p17 a {
+  #councils section.p17 a, #councils section.p14 a, #councils section.p11 a {
     font-size: 35px !important;
     width: 90% !important;
     line-height: 40px !important;

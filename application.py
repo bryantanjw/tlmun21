@@ -34,6 +34,12 @@ def concertEurope():
 @app.route("/councils/wha")
 def wha():
     return render_template('wha.html')
+@app.route("/councils/the_clone_wars")
+def the_clone_wars():
+    return render_template('the_clone_wars.html')
+@app.route("/councils/krisis_politik_malaysia_2020")
+def krisis_politik_malaysia_2020():
+    return render_template('krisis_politik_malaysia_2020.html')
 
 @app.route("/timeline")
 def timeline():

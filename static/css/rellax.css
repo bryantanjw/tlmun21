@@ -256,6 +256,30 @@ header h3 a:hover {
   margin-top: -10px;
 }
 
+.krisis {
+  position: absolute;
+  opacity: 0.5;
+  width: 550px;
+  height: 600px;
+  background: url(../img/krisis_mly.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+
+.clone_wars {
+  position: absolute;
+  opacity: 0.5;
+  width: 640px;
+  height: 550px;
+  background: url(../img/clone_wars.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: -60px;
+  margin-left: -100px;
+}
+
 .yalta {
   position: absolute;
   opacity: 0.5;
