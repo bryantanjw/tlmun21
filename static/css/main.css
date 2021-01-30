@@ -2355,7 +2355,9 @@ a, a:hover, a:active, a:focus {
     font-size: 40px;
   }
 }
-
+.banner-area {
+  height: 900px;
+}
 .banner-content {
   margin-top: 150px;
 }
