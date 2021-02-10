@@ -212,6 +212,17 @@ header h3 a:hover {
   z-index: -1;
 }
 
+.unga {
+  position: absolute;
+  opacity: 0.5;
+  width: 550px;
+  height: 465px;
+  background: url(../img/unga.png);
+  background-size: cover;
+  z-index: -1;
+  margin-top: 50px;
+}
+
 .coe {
   position: absolute;
   opacity: 0.5;

@@ -40,6 +40,9 @@ def the_clone_wars():
 @app.route("/councils/krisis_politik_malaysia_2020")
 def krisis_politik_malaysia_2020():
     return render_template('krisis_politik_malaysia_2020.html')
+@app.route("/councils/unga")
+def unga():
+    return render_template('unga.html')
 
 @app.route("/timeline")
 def timeline():
