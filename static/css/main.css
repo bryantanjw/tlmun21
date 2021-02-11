@@ -4154,6 +4154,9 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
     line-height: 40px !important;
     margin-left: -10% !important;
   }
+  #councils section.p18 a:before, #councils section.p18 a::after {
+    display: none;
+  }
 }
 #councils section.p17 a {
   font-size: 60px;
@@ -4188,7 +4191,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   opacity: 1;
 }
 #councils section.p18 {
-  background-image: url("//caraujo_pens.surge.sh/images/onQyeOq.jpg");
+  background-image: url(../img/unga_council.jpg);
 }
 #councils section.p18 a {
   width: 491px;
@@ -4196,7 +4199,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   line-height: 94px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 52%;
   margin-left: -245.5px;
   margin-top: -47px;
 }
@@ -4206,7 +4209,7 @@ section.p15 a:hover .t1 .in, #councils section.p15 a:hover .t2 .in {
   background-color: rgba(255, 255, 255, 0.8);
   width: 46px;
   height: 65px;
-  left: 100px;
+  left: 80px;
   top: -12%;
 }
 #councils section.p18 a:before {
